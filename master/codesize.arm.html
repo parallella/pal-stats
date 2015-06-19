@@ -1,0 +1,987 @@
+<html>
+<head>
+<title>PAL code size report for arm-linux-gnueabihf</title>
+<style>
+.increase {
+    background-color: red;
+}
+.decrease {
+    background-color: green;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #222;
+}
+th {
+    border-bottom: 1px solid #222;
+}
+tr.newsymbol {
+    border-top: 1px solid #222;
+}
+td, th {
+    border-left: 1px solid #222;
+    border-right: 1px solid #222;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.commit, .commit a, .symbol {
+    font-family: "Courier New", Courier, monospace;
+}
+.commit, .commit a {
+    min-width: 64ch;
+}
+.symbol {
+    min-width: 24ch;
+}
+.number {
+    text-align: right;
+    min-width: 6ch;
+}
+</style>
+</head>
+<body>
+<h1>PAL code size report for arm-linux-gnueabihf</h1>
+<p>Latest commit: 165903196483b8486c39bc19100f6bc5cd6bc467</p>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/boilerplate.c">src/base/boilerplate.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">__pal_fini</td><td>2015-02-16 19:34:15</td><td class="commit"><a href="https://github.com/parallella/pal/commit/6e9b31ee40a27dfb28d14648d4bbf717fa109e8e">6e9b31ee40a2: base: Add global table boiler plate</a></td><td class="number">88</td></tr>
+<tr class="newsymbol"><td class="symbol">__pal_global</td><td>2015-02-16 19:34:15</td><td class="commit"><a href="https://github.com/parallella/pal/commit/6e9b31ee40a27dfb28d14648d4bbf717fa109e8e">6e9b31ee40a2: base: Add global table boiler plate</a></td><td class="number">72</td></tr>
+<tr><td class="symbol"></td><td>2015-02-22 18:16:09</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bc3135370d8e62525797bd3b2f54a4f5fa608097">bc3135370d8e: math: Implement p_rand()</a></td><td class="number increase">100</td></tr>
+<tr class="newsymbol"><td class="symbol">__pal_init</td><td>2015-02-16 19:34:15</td><td class="commit"><a href="https://github.com/parallella/pal/commit/6e9b31ee40a27dfb28d14648d4bbf717fa109e8e">6e9b31ee40a2: base: Add global table boiler plate</a></td><td class="number">12</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_append.c">src/base/p_append.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_append</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">48</td></tr>
+<tr><td class="symbol"></td><td>2015-02-16 16:46:31</td><td class="commit"><a href="https://github.com/parallella/pal/commit/7d863595146d1656de078bd767d79343635d5291">7d863595146d: Use void pointers to represent PAL references</a></td><td class="number decrease">38</td></tr>
+<tr class="newsymbol"><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_add.c">src/base/p_atomic_add.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_atomic_add</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">26</td></tr>
+<tr><td class="symbol"></td><td>2015-02-16 16:46:31</td><td class="commit"><a href="https://github.com/parallella/pal/commit/7d863595146d1656de078bd767d79343635d5291">7d863595146d: Use void pointers to represent PAL references</a></td><td class="number decrease">24</td></tr>
+<tr class="newsymbol"><td class="symbol">p_atomic_add_u32</td><td>2015-02-28 22:51:12</td><td class="commit"><a href="https://github.com/parallella/pal/commit/33fd816c0b068dc47be8f002d006de81a730807a">33fd816c0b06: Fix more inconsistencies between header/impleme...</a></td><td class="number">24</td></tr>
+<tr class="newsymbol"><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_and.c">src/base/p_atomic_and.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_atomic_and_u32</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">26</td></tr>
+<tr><td class="symbol"></td><td>2015-02-16 16:46:31</td><td class="commit"><a href="https://github.com/parallella/pal/commit/7d863595146d1656de078bd767d79343635d5291">7d863595146d: Use void pointers to represent PAL references</a></td><td class="number decrease">24</td></tr>
+<tr class="newsymbol"><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_compswap.c">src/base/p_atomic_compswap.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_atomic_compswap_u32</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">28</td></tr>
+<tr><td class="symbol"></td><td>2015-02-16 16:46:31</td><td class="commit"><a href="https://github.com/parallella/pal/commit/7d863595146d1656de078bd767d79343635d5291">7d863595146d: Use void pointers to represent PAL references</a></td><td class="number decrease">26</td></tr>
+<tr class="newsymbol"><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_or.c">src/base/p_atomic_or.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_atomic_or_u32</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">26</td></tr>
+<tr><td class="symbol"></td><td>2015-02-16 16:46:31</td><td class="commit"><a href="https://github.com/parallella/pal/commit/7d863595146d1656de078bd767d79343635d5291">7d863595146d: Use void pointers to represent PAL references</a></td><td class="number decrease">24</td></tr>
+<tr class="newsymbol"><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_sub.c">src/base/p_atomic_sub.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_atomic_sub_u32</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">26</td></tr>
+<tr><td class="symbol"></td><td>2015-02-16 16:46:31</td><td class="commit"><a href="https://github.com/parallella/pal/commit/7d863595146d1656de078bd767d79343635d5291">7d863595146d: Use void pointers to represent PAL references</a></td><td class="number decrease">24</td></tr>
+<tr class="newsymbol"><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_swap.c">src/base/p_atomic_swap.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_atomic_swap_u32</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">26</td></tr>
+<tr><td class="symbol"></td><td>2015-02-16 16:46:31</td><td class="commit"><a href="https://github.com/parallella/pal/commit/7d863595146d1656de078bd767d79343635d5291">7d863595146d: Use void pointers to represent PAL references</a></td><td class="number decrease">24</td></tr>
+<tr class="newsymbol"><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_xor.c">src/base/p_atomic_xor.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_atomic_xor_u32</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">26</td></tr>
+<tr><td class="symbol"></td><td>2015-02-16 16:46:31</td><td class="commit"><a href="https://github.com/parallella/pal/commit/7d863595146d1656de078bd767d79343635d5291">7d863595146d: Use void pointers to represent PAL references</a></td><td class="number decrease">24</td></tr>
+<tr class="newsymbol"><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_barrier.c">src/base/p_barrier.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_barrier</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">36</td></tr>
+<tr><td class="symbol"></td><td>2015-02-16 16:46:31</td><td class="commit"><a href="https://github.com/parallella/pal/commit/7d863595146d1656de078bd767d79343635d5291">7d863595146d: Use void pointers to represent PAL references</a></td><td class="number decrease">32</td></tr>
+<tr class="newsymbol"><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_close.c">src/base/p_close.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_close</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">36</td></tr>
+<tr><td class="symbol"></td><td>2015-02-16 16:46:31</td><td class="commit"><a href="https://github.com/parallella/pal/commit/7d863595146d1656de078bd767d79343635d5291">7d863595146d: Use void pointers to represent PAL references</a></td><td class="number decrease">32</td></tr>
+<tr><td class="symbol"></td><td>2015-02-23 21:51:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/0fa485a0d0bb5888a2288bf68490183f15487e9d">0fa485a0d0bb: base: Sanity check references</a></td><td class="number increase">50</td></tr>
+<tr class="newsymbol"><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_ref_is_err</td><td>2015-02-23 21:51:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/0fa485a0d0bb5888a2288bf68490183f15487e9d">0fa485a0d0bb: base: Sanity check references</a></td><td class="number">34</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_fence.c">src/base/p_fence.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_fence</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">36</td></tr>
+<tr><td class="symbol"></td><td>2015-02-16 16:46:31</td><td class="commit"><a href="https://github.com/parallella/pal/commit/7d863595146d1656de078bd767d79343635d5291">7d863595146d: Use void pointers to represent PAL references</a></td><td class="number decrease">32</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_finalize.c">src/base/p_finalize.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_finalize</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">36</td></tr>
+<tr><td class="symbol"></td><td>2015-02-16 16:46:31</td><td class="commit"><a href="https://github.com/parallella/pal/commit/7d863595146d1656de078bd767d79343635d5291">7d863595146d: Use void pointers to represent PAL references</a></td><td class="number decrease">32</td></tr>
+<tr><td class="symbol"></td><td>2015-02-19 12:49:47</td><td class="commit"><a href="https://github.com/parallella/pal/commit/567fb98e563d92127f53a1ba090ad5c1fe321e67">567fb98e563d: base/epiphany: Minimal "working" implementation.</a></td><td class="number increase">46</td></tr>
+<tr><td class="symbol"></td><td>2015-03-07 00:00:30</td><td class="commit"><a href="https://github.com/parallella/pal/commit/2983bf0246c925238ae84cf2e95e5c39b89b92b9">2983bf0246c9: Merge branch 'master' of https://github.com/aol...</a></td><td class="number increase">68</td></tr>
+<tr><td class="symbol"></td><td>2015-04-27 14:47:34</td><td class="commit"><a href="https://github.com/parallella/pal/commit/ea107e5c917cd29d9d3204d6f9fcace342eeb925">ea107e5c917c: Fix compiler warnings</a></td><td class="number decrease">64</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_ref_err</td><td>2015-03-07 00:00:30</td><td class="commit"><a href="https://github.com/parallella/pal/commit/2983bf0246c925238ae84cf2e95e5c39b89b92b9">2983bf0246c9: Merge branch 'master' of https://github.com/aol...</a></td><td class="number">24</td></tr>
+<tr class="newsymbol"><td class="symbol">p_ref_is_err</td><td>2015-03-07 00:00:30</td><td class="commit"><a href="https://github.com/parallella/pal/commit/2983bf0246c925238ae84cf2e95e5c39b89b92b9">2983bf0246c9: Merge branch 'master' of https://github.com/aol...</a></td><td class="number">34</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_free.c">src/base/p_free.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_free</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">36</td></tr>
+<tr><td class="symbol"></td><td>2015-02-16 16:46:31</td><td class="commit"><a href="https://github.com/parallella/pal/commit/7d863595146d1656de078bd767d79343635d5291">7d863595146d: Use void pointers to represent PAL references</a></td><td class="number decrease">32</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_gather.c">src/base/p_gather.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_gather</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">28</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_get_err.c">src/base/p_get_err.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_dev_table_global</td><td>2015-02-16 16:56:55</td><td class="commit"><a href="https://github.com/parallella/pal/commit/9096a8c0d88a38c0dcda4dac9006b26e9fd2fba9">9096a8c0d88a: base: Add error helper functions</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_get_err</td><td>2015-02-16 16:56:55</td><td class="commit"><a href="https://github.com/parallella/pal/commit/9096a8c0d88a38c0dcda4dac9006b26e9fd2fba9">9096a8c0d88a: base: Add error helper functions</a></td><td class="number">24</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-16 16:56:55</td><td class="commit"><a href="https://github.com/parallella/pal/commit/9096a8c0d88a38c0dcda4dac9006b26e9fd2fba9">9096a8c0d88a: base: Add error helper functions</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-16 16:56:55</td><td class="commit"><a href="https://github.com/parallella/pal/commit/9096a8c0d88a38c0dcda4dac9006b26e9fd2fba9">9096a8c0d88a: base: Add error helper functions</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_ref_get_err</td><td>2015-02-16 16:56:55</td><td class="commit"><a href="https://github.com/parallella/pal/commit/9096a8c0d88a38c0dcda4dac9006b26e9fd2fba9">9096a8c0d88a: base: Add error helper functions</a></td><td class="number">34</td></tr>
+<tr class="newsymbol"><td class="symbol">p_ref_is_err</td><td>2015-02-16 16:56:55</td><td class="commit"><a href="https://github.com/parallella/pal/commit/9096a8c0d88a38c0dcda4dac9006b26e9fd2fba9">9096a8c0d88a: base: Add error helper functions</a></td><td class="number">34</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-16 16:56:55</td><td class="commit"><a href="https://github.com/parallella/pal/commit/9096a8c0d88a38c0dcda4dac9006b26e9fd2fba9">9096a8c0d88a: base: Add error helper functions</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_getaddr.c">src/base/p_getaddr.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_getaddr</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">24</td></tr>
+<tr><td class="symbol"></td><td>2015-02-16 16:46:31</td><td class="commit"><a href="https://github.com/parallella/pal/commit/7d863595146d1656de078bd767d79343635d5291">7d863595146d: Use void pointers to represent PAL references</a></td><td class="number decrease">22</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_getsymbol.c">src/base/p_getsymbol.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_getsymbol</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">26</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_init.c">src/base/p_init.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_init</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">56</td></tr>
+<tr><td class="symbol"></td><td>2015-02-16 16:46:31</td><td class="commit"><a href="https://github.com/parallella/pal/commit/7d863595146d1656de078bd767d79343635d5291">7d863595146d: Use void pointers to represent PAL references</a></td><td class="number decrease">50</td></tr>
+<tr><td class="symbol"></td><td>2015-02-16 19:34:15</td><td class="commit"><a href="https://github.com/parallella/pal/commit/6e9b31ee40a27dfb28d14648d4bbf717fa109e8e">6e9b31ee40a2: base: Add global table boiler plate</a></td><td class="number increase">92</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_ref_err</td><td>2015-02-16 19:34:15</td><td class="commit"><a href="https://github.com/parallella/pal/commit/6e9b31ee40a27dfb28d14648d4bbf717fa109e8e">6e9b31ee40a2: base: Add global table boiler plate</a></td><td class="number">24</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_load.c">src/base/p_load.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_load</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">36</td></tr>
+<tr><td class="symbol"></td><td>2015-02-16 16:46:31</td><td class="commit"><a href="https://github.com/parallella/pal/commit/7d863595146d1656de078bd767d79343635d5291">7d863595146d: Use void pointers to represent PAL references</a></td><td class="number decrease">30</td></tr>
+<tr><td class="symbol"></td><td>2015-02-19 12:49:47</td><td class="commit"><a href="https://github.com/parallella/pal/commit/567fb98e563d92127f53a1ba090ad5c1fe321e67">567fb98e563d: base/epiphany: Minimal "working" implementation.</a></td><td class="number increase">132</td></tr>
+<tr><td class="symbol"></td><td>2015-02-23 21:51:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/0fa485a0d0bb5888a2288bf68490183f15487e9d">0fa485a0d0bb: base: Sanity check references</a></td><td class="number increase">154</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_ref_err</td><td>2015-02-16 16:56:55</td><td class="commit"><a href="https://github.com/parallella/pal/commit/9096a8c0d88a38c0dcda4dac9006b26e9fd2fba9">9096a8c0d88a: base: Add error helper functions</a></td><td class="number">24</td></tr>
+<tr class="newsymbol"><td class="symbol">p_ref_is_err</td><td>2015-02-23 21:51:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/0fa485a0d0bb5888a2288bf68490183f15487e9d">0fa485a0d0bb: base: Sanity check references</a></td><td class="number">34</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_malloc.c">src/base/p_malloc.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_malloc</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">50</td></tr>
+<tr><td class="symbol"></td><td>2015-02-16 16:46:31</td><td class="commit"><a href="https://github.com/parallella/pal/commit/7d863595146d1656de078bd767d79343635d5291">7d863595146d: Use void pointers to represent PAL references</a></td><td class="number decrease">38</td></tr>
+<tr><td class="symbol"></td><td>2015-02-17 21:11:43</td><td class="commit"><a href="https://github.com/parallella/pal/commit/9a519bd6fbab0b6354f52b774e0e05b77ad32ce3">9a519bd6fbab: Fix a couple of compiler warnings</a></td><td class="number increase">44</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_ref_err</td><td>2015-02-17 21:11:43</td><td class="commit"><a href="https://github.com/parallella/pal/commit/9a519bd6fbab0b6354f52b774e0e05b77ad32ce3">9a519bd6fbab: Fix a couple of compiler warnings</a></td><td class="number">24</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_memcpy.c">src/base/p_memcpy.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_memcpy</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">28</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_mutex_destroy.c">src/base/p_mutex_destroy.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mutex_destroy</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">22</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_mutex_init.c">src/base/p_mutex_init.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mutex_init</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">22</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_mutex_lock.c">src/base/p_mutex_lock.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mutex_lock</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">22</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_mutex_trylock.c">src/base/p_mutex_trylock.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mutex_trylock</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">22</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_mutex_unlock.c">src/base/p_mutex_unlock.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mutex_unlock</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">22</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_open.c">src/base/p_open.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_open</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">56</td></tr>
+<tr><td class="symbol"></td><td>2015-02-16 16:46:31</td><td class="commit"><a href="https://github.com/parallella/pal/commit/7d863595146d1656de078bd767d79343635d5291">7d863595146d: Use void pointers to represent PAL references</a></td><td class="number decrease">42</td></tr>
+<tr><td class="symbol"></td><td>2015-02-16 16:56:55</td><td class="commit"><a href="https://github.com/parallella/pal/commit/9096a8c0d88a38c0dcda4dac9006b26e9fd2fba9">9096a8c0d88a: base: Add error helper functions</a></td><td class="number decrease">28</td></tr>
+<tr><td class="symbol"></td><td>2015-02-19 12:49:47</td><td class="commit"><a href="https://github.com/parallella/pal/commit/567fb98e563d92127f53a1ba090ad5c1fe321e67">567fb98e563d: base/epiphany: Minimal "working" implementation.</a></td><td class="number increase">164</td></tr>
+<tr><td class="symbol"></td><td>2015-02-23 21:51:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/0fa485a0d0bb5888a2288bf68490183f15487e9d">0fa485a0d0bb: base: Sanity check references</a></td><td class="number increase">186</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_ref_err</td><td>2015-02-16 16:56:55</td><td class="commit"><a href="https://github.com/parallella/pal/commit/9096a8c0d88a38c0dcda4dac9006b26e9fd2fba9">9096a8c0d88a: base: Add error helper functions</a></td><td class="number">24</td></tr>
+<tr class="newsymbol"><td class="symbol">p_ref_is_err</td><td>2015-02-19 12:49:47</td><td class="commit"><a href="https://github.com/parallella/pal/commit/567fb98e563d92127f53a1ba090ad5c1fe321e67">567fb98e563d: base/epiphany: Minimal "working" implementation.</a></td><td class="number">34</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_query.c">src/base/p_query.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_query</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">44</td></tr>
+<tr><td class="symbol"></td><td>2015-02-16 16:46:31</td><td class="commit"><a href="https://github.com/parallella/pal/commit/7d863595146d1656de078bd767d79343635d5291">7d863595146d: Use void pointers to represent PAL references</a></td><td class="number decrease">38</td></tr>
+<tr><td class="symbol"></td><td>2015-02-17 20:47:52</td><td class="commit"><a href="https://github.com/parallella/pal/commit/fcaae58b1380e2478a1806214da8eb181980eb9e">fcaae58b1380: base: Minimal implementation of p_query()</a></td><td class="number increase">48</td></tr>
+<tr><td class="symbol"></td><td>2015-02-23 21:51:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/0fa485a0d0bb5888a2288bf68490183f15487e9d">0fa485a0d0bb: base: Sanity check references</a></td><td class="number increase">54</td></tr>
+<tr class="newsymbol"><td class="symbol">p_ref_is_err</td><td>2015-02-23 21:51:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/0fa485a0d0bb5888a2288bf68490183f15487e9d">0fa485a0d0bb: base: Sanity check references</a></td><td class="number">34</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_read.c">src/base/p_read.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_read</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">54</td></tr>
+<tr><td class="symbol"></td><td>2015-02-16 16:46:31</td><td class="commit"><a href="https://github.com/parallella/pal/commit/7d863595146d1656de078bd767d79343635d5291">7d863595146d: Use void pointers to represent PAL references</a></td><td class="number decrease">50</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_remove.c">src/base/p_remove.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_remove</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">36</td></tr>
+<tr><td class="symbol"></td><td>2015-02-16 16:46:31</td><td class="commit"><a href="https://github.com/parallella/pal/commit/7d863595146d1656de078bd767d79343635d5291">7d863595146d: Use void pointers to represent PAL references</a></td><td class="number decrease">26</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_rmalloc.c">src/base/p_rmalloc.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_ref_err</td><td>2015-02-16 16:56:55</td><td class="commit"><a href="https://github.com/parallella/pal/commit/9096a8c0d88a38c0dcda4dac9006b26e9fd2fba9">9096a8c0d88a: base: Add error helper functions</a></td><td class="number">24</td></tr>
+<tr class="newsymbol"><td class="symbol">p_rmalloc</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">50</td></tr>
+<tr><td class="symbol"></td><td>2015-02-16 16:46:31</td><td class="commit"><a href="https://github.com/parallella/pal/commit/7d863595146d1656de078bd767d79343635d5291">7d863595146d: Use void pointers to represent PAL references</a></td><td class="number decrease">42</td></tr>
+<tr><td class="symbol"></td><td>2015-02-16 16:56:55</td><td class="commit"><a href="https://github.com/parallella/pal/commit/9096a8c0d88a38c0dcda4dac9006b26e9fd2fba9">9096a8c0d88a: base: Add error helper functions</a></td><td class="number increase">46</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_run.c">src/base/p_run.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_ref_is_err</td><td>2015-02-23 21:51:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/0fa485a0d0bb5888a2288bf68490183f15487e9d">0fa485a0d0bb: base: Sanity check references</a></td><td class="number">34</td></tr>
+<tr class="newsymbol"><td class="symbol">p_run</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">66</td></tr>
+<tr><td class="symbol"></td><td>2015-02-16 16:46:31</td><td class="commit"><a href="https://github.com/parallella/pal/commit/7d863595146d1656de078bd767d79343635d5291">7d863595146d: Use void pointers to represent PAL references</a></td><td class="number decrease">56</td></tr>
+<tr><td class="symbol"></td><td>2015-02-19 12:49:47</td><td class="commit"><a href="https://github.com/parallella/pal/commit/567fb98e563d92127f53a1ba090ad5c1fe321e67">567fb98e563d: base/epiphany: Minimal "working" implementation.</a></td><td class="number increase">102</td></tr>
+<tr><td class="symbol"></td><td>2015-02-23 21:51:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/0fa485a0d0bb5888a2288bf68490183f15487e9d">0fa485a0d0bb: base: Sanity check references</a></td><td class="number increase">132</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_wait.c">src/base/p_wait.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_ref_is_err</td><td>2015-02-20 18:53:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07d4907b53fd77d0e35a4e6f8e2360df492e133b">07d4907b53fd: base: Naive epiphany wait implementation</a></td><td class="number">34</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_wait</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">34</td></tr>
+<tr><td class="symbol"></td><td>2015-02-16 16:46:31</td><td class="commit"><a href="https://github.com/parallella/pal/commit/7d863595146d1656de078bd767d79343635d5291">7d863595146d: Use void pointers to represent PAL references</a></td><td class="number decrease">32</td></tr>
+<tr><td class="symbol"></td><td>2015-02-20 18:53:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07d4907b53fd77d0e35a4e6f8e2360df492e133b">07d4907b53fd: base: Naive epiphany wait implementation</a></td><td class="number increase">70</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_write.c">src/base/p_write.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_dev_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mem_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_program_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_team_table_global</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">68</td></tr>
+<tr class="newsymbol"><td class="symbol">p_write</td><td>2015-02-12 18:52:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/521aa636a374c1d8e83df927d50d9a542537362b">521aa636a374: build: Add build instructions for libpal</a></td><td class="number">54</td></tr>
+<tr><td class="symbol"></td><td>2015-02-16 16:46:31</td><td class="commit"><a href="https://github.com/parallella/pal/commit/7d863595146d1656de078bd767d79343635d5291">7d863595146d: Use void pointers to represent PAL references</a></td><td class="number decrease">48</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_acorr.c">src/dsp/p_acorr.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_acorr_32f</td><td>2015-02-27 12:58:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/500c42820021724c034f01c6bbb6949a65857a94">500c42820021: build: Add dsp fft and image directories</a></td><td class="number">24</td></tr>
+<tr class="newsymbol"><td class="symbol">p_acorr_f32</td><td>2015-02-28 22:51:12</td><td class="commit"><a href="https://github.com/parallella/pal/commit/33fd816c0b068dc47be8f002d006de81a730807a">33fd816c0b06: Fix more inconsistencies between header/impleme...</a></td><td class="number">24</td></tr>
+<tr><td class="symbol"></td><td>2015-04-27 15:30:37</td><td class="commit"><a href="https://github.com/parallella/pal/commit/8e5d7b2011e115981a0b795c2d7c0ae6717d1802">8e5d7b2011e1: Merge branch 'pr-acorr-merge'</a></td><td class="number increase">140</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_conv.c">src/dsp/p_conv.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_conv_32f</td><td>2015-02-27 12:58:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/500c42820021724c034f01c6bbb6949a65857a94">500c42820021: build: Add dsp fft and image directories</a></td><td class="number">24</td></tr>
+<tr class="newsymbol"><td class="symbol">p_conv_f32</td><td>2015-02-28 22:51:12</td><td class="commit"><a href="https://github.com/parallella/pal/commit/33fd816c0b068dc47be8f002d006de81a730807a">33fd816c0b06: Fix more inconsistencies between header/impleme...</a></td><td class="number">24</td></tr>
+<tr><td class="symbol"></td><td>2015-06-03 01:18:20</td><td class="commit"><a href="https://github.com/parallella/pal/commit/3e50d07216dcc296342d4b886fe6e796416ad313">3e50d07216dc: Merge pull request #61 from Fster/patch-1</a></td><td class="number increase">128</td></tr>
+<tr><td class="symbol"></td><td>2015-06-03 15:41:19</td><td class="commit"><a href="https://github.com/parallella/pal/commit/52e3e54cb0f1165a33da007e2f190abd6da7c58c">52e3e54cb0f1: Merge pull request #64 from technopolymath/master</a></td><td class="number increase">136</td></tr>
+<tr><td class="symbol"></td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number increase">178</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_fir.c">src/dsp/p_fir.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_fir_32f</td><td>2015-02-27 12:58:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/500c42820021724c034f01c6bbb6949a65857a94">500c42820021: build: Add dsp fft and image directories</a></td><td class="number">24</td></tr>
+<tr class="newsymbol"><td class="symbol">p_fir_f32</td><td>2015-02-28 22:51:12</td><td class="commit"><a href="https://github.com/parallella/pal/commit/33fd816c0b068dc47be8f002d006de81a730807a">33fd816c0b06: Fix more inconsistencies between header/impleme...</a></td><td class="number">24</td></tr>
+<tr><td class="symbol"></td><td>2015-03-07 19:06:13</td><td class="commit"><a href="https://github.com/parallella/pal/commit/5a80a343ca5c63ee8b64e66aacd6c0ce22064ee9">5a80a343ca5c: Adding optimized FIR function -based on yaniv's...</a></td><td class="number increase">1770</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_firdec.c">src/dsp/p_firdec.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_firdec_32f</td><td>2015-02-27 12:58:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/500c42820021724c034f01c6bbb6949a65857a94">500c42820021: build: Add dsp fft and image directories</a></td><td class="number">24</td></tr>
+<tr class="newsymbol"><td class="symbol">p_firdec_f32</td><td>2015-02-28 22:51:12</td><td class="commit"><a href="https://github.com/parallella/pal/commit/33fd816c0b068dc47be8f002d006de81a730807a">33fd816c0b06: Fix more inconsistencies between header/impleme...</a></td><td class="number">24</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_firint.c">src/dsp/p_firint.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_firint_32f</td><td>2015-02-27 12:58:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/500c42820021724c034f01c6bbb6949a65857a94">500c42820021: build: Add dsp fft and image directories</a></td><td class="number">24</td></tr>
+<tr class="newsymbol"><td class="symbol">p_firint_f32</td><td>2015-02-28 22:51:12</td><td class="commit"><a href="https://github.com/parallella/pal/commit/33fd816c0b068dc47be8f002d006de81a730807a">33fd816c0b06: Fix more inconsistencies between header/impleme...</a></td><td class="number">24</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_firsym.c">src/dsp/p_firsym.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_firsym_32f</td><td>2015-02-27 12:58:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/500c42820021724c034f01c6bbb6949a65857a94">500c42820021: build: Add dsp fft and image directories</a></td><td class="number">24</td></tr>
+<tr class="newsymbol"><td class="symbol">p_firsym_f32</td><td>2015-02-28 22:51:12</td><td class="commit"><a href="https://github.com/parallella/pal/commit/33fd816c0b068dc47be8f002d006de81a730807a">33fd816c0b06: Fix more inconsistencies between header/impleme...</a></td><td class="number">24</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_iir.c">src/dsp/p_iir.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">coeffs</td><td>2015-04-09 19:10:22</td><td class="commit"><a href="https://github.com/parallella/pal/commit/d0ea3d31928b92a1abbb633de0bed4915f3f0501">d0ea3d31928b: Fixing build errors (function not done...)</a></td><td class="number">64</td></tr>
+<tr class="newsymbol"><td class="symbol">p_iir_32f</td><td>2015-02-27 12:58:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/500c42820021724c034f01c6bbb6949a65857a94">500c42820021: build: Add dsp fft and image directories</a></td><td class="number">24</td></tr>
+<tr class="newsymbol"><td class="symbol">p_iir_f32</td><td>2015-02-28 22:51:12</td><td class="commit"><a href="https://github.com/parallella/pal/commit/33fd816c0b068dc47be8f002d006de81a730807a">33fd816c0b06: Fix more inconsistencies between header/impleme...</a></td><td class="number">24</td></tr>
+<tr><td class="symbol"></td><td>2015-04-09 19:10:22</td><td class="commit"><a href="https://github.com/parallella/pal/commit/d0ea3d31928b92a1abbb633de0bed4915f3f0501">d0ea3d31928b: Fixing build errors (function not done...)</a></td><td class="number increase">2222</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_xcorr.c">src/dsp/p_xcorr.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_xcorr_32f</td><td>2015-02-27 12:58:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/500c42820021724c034f01c6bbb6949a65857a94">500c42820021: build: Add dsp fft and image directories</a></td><td class="number">24</td></tr>
+<tr class="newsymbol"><td class="symbol">p_xcorr_f32</td><td>2015-02-28 22:51:12</td><td class="commit"><a href="https://github.com/parallella/pal/commit/33fd816c0b068dc47be8f002d006de81a730807a">33fd816c0b06: Fix more inconsistencies between header/impleme...</a></td><td class="number">24</td></tr>
+<tr><td class="symbol"></td><td>2015-04-30 10:03:41</td><td class="commit"><a href="https://github.com/parallella/pal/commit/7f86c84c6efbed58bac106e82bea059bae3b15b1">7f86c84c6efb: Merge branch 'pr-xcorr-merge'</a></td><td class="number increase">476</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/fft/p_cfft.c">src/fft/p_cfft.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_cfft</td><td>2015-02-27 12:58:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/500c42820021724c034f01c6bbb6949a65857a94">500c42820021: build: Add dsp fft and image directories</a></td><td class="number">24</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_box3x3.c">src/image/p_box3x3.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_box3x3_32f</td><td>2015-02-27 12:58:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/500c42820021724c034f01c6bbb6949a65857a94">500c42820021: build: Add dsp fft and image directories</a></td><td class="number">382</td></tr>
+<tr class="newsymbol"><td class="symbol">p_box3x3_f32</td><td>2015-02-28 22:51:12</td><td class="commit"><a href="https://github.com/parallella/pal/commit/33fd816c0b068dc47be8f002d006de81a730807a">33fd816c0b06: Fix more inconsistencies between header/impleme...</a></td><td class="number">382</td></tr>
+<tr><td class="symbol"></td><td>2015-03-03 17:44:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/3a82fc999b0f089d24bfa0ab2801bed74bb20b6c">3a82fc999b0f: Merge pull request #20 from mateunho/fixes</a></td><td class="number increase">400</td></tr>
+<tr><td class="symbol"></td><td>2015-06-08 21:19:50</td><td class="commit"><a href="https://github.com/parallella/pal/commit/87f298c24c6c149cfb132b28e4cfd73653c63d05">87f298c24c6c: Making all constants single precision -avoids h...</a></td><td class="number decrease">388</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_conv2d.c">src/image/p_conv2d.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_conv2d_f32</td><td>2015-02-27 12:58:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/500c42820021724c034f01c6bbb6949a65857a94">500c42820021: build: Add dsp fft and image directories</a></td><td class="number">24</td></tr>
+<tr><td class="symbol"></td><td>2015-03-04 23:29:17</td><td class="commit"><a href="https://github.com/parallella/pal/commit/5369c16bf320e3d566ccb651c9508d354b21d3ce">5369c16bf320: Merge pull request #23 from mateunho/conv2d</a></td><td class="number increase">358</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">366</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">358</td></tr>
+<tr><td class="symbol"></td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number decrease">254</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_gauss3x3.c">src/image/p_gauss3x3.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_gauss3x3_32f</td><td>2015-02-27 12:58:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/500c42820021724c034f01c6bbb6949a65857a94">500c42820021: build: Add dsp fft and image directories</a></td><td class="number">26</td></tr>
+<tr class="newsymbol"><td class="symbol">p_gauss3x3_f32</td><td>2015-02-28 22:51:12</td><td class="commit"><a href="https://github.com/parallella/pal/commit/33fd816c0b068dc47be8f002d006de81a730807a">33fd816c0b06: Fix more inconsistencies between header/impleme...</a></td><td class="number">24</td></tr>
+<tr><td class="symbol"></td><td>2015-03-01 14:32:33</td><td class="commit"><a href="https://github.com/parallella/pal/commit/312d4a88574be2b865a494f6be3945f49cf8522e">312d4a88574b: Merge pull request #17 from mateunho/gauss</a></td><td class="number increase">392</td></tr>
+<tr><td class="symbol"></td><td>2015-06-05 18:09:19</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b631659fedf30328722b6f760aea8f675f77c57e">b631659fedf3: Merge pull request #81 from anael-seghezzi/master</a></td><td class="number decrease">364</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_harris3x3.c">src/image/p_harris3x3.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_sst3x3</td><td>2015-06-05 02:24:12</td><td class="commit"><a href="https://github.com/parallella/pal/commit/eae3dfc883869626ecbb44df1ae67f9c9b9c74b8">eae3dfc88386: Merge pull request #77 from anael-seghezzi/image</a></td><td class="number">462</td></tr>
+<tr class="newsymbol"><td class="symbol">p_harris3x3_f32</td><td>2015-06-05 02:24:12</td><td class="commit"><a href="https://github.com/parallella/pal/commit/eae3dfc883869626ecbb44df1ae67f9c9b9c74b8">eae3dfc88386: Merge pull request #77 from anael-seghezzi/image</a></td><td class="number">872</td></tr>
+<tr><td class="symbol"></td><td>2015-06-05 15:22:13</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a85fe0a966835cc3541baf445f388dd7fe321681">a85fe0a96683: Merge pull request #80 from anael-seghezzi/master</a></td><td class="number increase">888</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">880</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_laplace3x3.c">src/image/p_laplace3x3.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_laplace3x3_32f</td><td>2015-02-27 12:58:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/500c42820021724c034f01c6bbb6949a65857a94">500c42820021: build: Add dsp fft and image directories</a></td><td class="number">312</td></tr>
+<tr class="newsymbol"><td class="symbol">p_laplace3x3_f32</td><td>2015-02-28 22:51:12</td><td class="commit"><a href="https://github.com/parallella/pal/commit/33fd816c0b068dc47be8f002d006de81a730807a">33fd816c0b06: Fix more inconsistencies between header/impleme...</a></td><td class="number">312</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_median3x3.c">src/image/p_median3x3.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">opt_med9</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">608</td></tr>
+<tr class="newsymbol"><td class="symbol">p_median3x3_32f</td><td>2015-02-27 12:58:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/500c42820021724c034f01c6bbb6949a65857a94">500c42820021: build: Add dsp fft and image directories</a></td><td class="number">24</td></tr>
+<tr class="newsymbol"><td class="symbol">p_median3x3_f32</td><td>2015-02-28 22:51:12</td><td class="commit"><a href="https://github.com/parallella/pal/commit/33fd816c0b068dc47be8f002d006de81a730807a">33fd816c0b06: Fix more inconsistencies between header/impleme...</a></td><td class="number">24</td></tr>
+<tr><td class="symbol"></td><td>2015-03-28 02:33:52</td><td class="commit"><a href="https://github.com/parallella/pal/commit/95dc011722d0392f4cf3076cc170252316aaeb7f">95dc011722d0: Merge branch 'master' of https://github.com/aol...</a></td><td class="number increase">334</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">322</td></tr>
+<tr><td class="symbol"></td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number increase">328</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_prewitt3x3.c">src/image/p_prewitt3x3.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_prewitt3x3_32f</td><td>2015-02-27 12:58:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/500c42820021724c034f01c6bbb6949a65857a94">500c42820021: build: Add dsp fft and image directories</a></td><td class="number">478</td></tr>
+<tr class="newsymbol"><td class="symbol">p_prewitt3x3_f32</td><td>2015-02-28 22:51:12</td><td class="commit"><a href="https://github.com/parallella/pal/commit/33fd816c0b068dc47be8f002d006de81a730807a">33fd816c0b06: Fix more inconsistencies between header/impleme...</a></td><td class="number">478</td></tr>
+<tr><td class="symbol"></td><td>2015-03-03 17:44:57</td><td class="commit"><a href="https://github.com/parallella/pal/commit/3a82fc999b0f089d24bfa0ab2801bed74bb20b6c">3a82fc999b0f: Merge pull request #20 from mateunho/fixes</a></td><td class="number increase">496</td></tr>
+<tr><td class="symbol"></td><td>2015-06-08 21:19:50</td><td class="commit"><a href="https://github.com/parallella/pal/commit/87f298c24c6c149cfb132b28e4cfd73653c63d05">87f298c24c6c: Making all constants single precision -avoids h...</a></td><td class="number decrease">484</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_sad16x16.c">src/image/p_sad16x16.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_sad16x16_32f</td><td>2015-02-27 12:58:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/500c42820021724c034f01c6bbb6949a65857a94">500c42820021: build: Add dsp fft and image directories</a></td><td class="number">24</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sad16x16_f32</td><td>2015-02-28 22:51:12</td><td class="commit"><a href="https://github.com/parallella/pal/commit/33fd816c0b068dc47be8f002d006de81a730807a">33fd816c0b06: Fix more inconsistencies between header/impleme...</a></td><td class="number">24</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_sad8x8.c">src/image/p_sad8x8.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_sad8x8_32f</td><td>2015-02-27 12:58:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/500c42820021724c034f01c6bbb6949a65857a94">500c42820021: build: Add dsp fft and image directories</a></td><td class="number">24</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sad8x8_f32</td><td>2015-02-28 22:51:12</td><td class="commit"><a href="https://github.com/parallella/pal/commit/33fd816c0b068dc47be8f002d006de81a730807a">33fd816c0b06: Fix more inconsistencies between header/impleme...</a></td><td class="number">24</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_scharr3x3.c">src/image/p_scharr3x3.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_scharr3x3_32f</td><td>2015-02-27 12:58:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/500c42820021724c034f01c6bbb6949a65857a94">500c42820021: build: Add dsp fft and image directories</a></td><td class="number">24</td></tr>
+<tr class="newsymbol"><td class="symbol">p_scharr3x3_f32</td><td>2015-02-28 22:51:12</td><td class="commit"><a href="https://github.com/parallella/pal/commit/33fd816c0b068dc47be8f002d006de81a730807a">33fd816c0b06: Fix more inconsistencies between header/impleme...</a></td><td class="number">24</td></tr>
+<tr><td class="symbol"></td><td>2015-06-10 18:26:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/29741b7a541bec71472ce9d05422ea948a9d9e52">29741b7a541b: Merge pull request #121 from damjandakic/master</a></td><td class="number increase">552</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_sobel3x3.c">src/image/p_sobel3x3.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_sobel3x3_32f</td><td>2015-02-27 12:58:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/500c42820021724c034f01c6bbb6949a65857a94">500c42820021: build: Add dsp fft and image directories</a></td><td class="number">494</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sobel3x3_f32</td><td>2015-02-28 22:51:12</td><td class="commit"><a href="https://github.com/parallella/pal/commit/33fd816c0b068dc47be8f002d006de81a730807a">33fd816c0b06: Fix more inconsistencies between header/impleme...</a></td><td class="number">494</td></tr>
+<tr><td class="symbol"></td><td>2015-06-05 03:48:23</td><td class="commit"><a href="https://github.com/parallella/pal/commit/d106d24f1ffac9065b9ebcc7f17590e4139333a4">d106d24f1ffa: Merge pull request #79 from jar/master</a></td><td class="number increase">1908</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_a_inv.c">src/math/p_a_inv.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_a_inv_f32</td><td>2015-06-03 15:41:19</td><td class="commit"><a href="https://github.com/parallella/pal/commit/52e3e54cb0f1165a33da007e2f190abd6da7c58c">52e3e54cb0f1: Merge pull request #64 from technopolymath/master</a></td><td class="number">340</td></tr>
+<tr><td class="symbol"></td><td>2015-06-06 15:08:49</td><td class="commit"><a href="https://github.com/parallella/pal/commit/d81895716146547210d87218811c6161960e9809">d81895716146: Merge branch 'pr-78' into master</a></td><td class="number decrease">282</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_abs.c">src/math/p_abs.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_abs_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">114</td></tr>
+<tr class="newsymbol"><td class="symbol">p_abs_f32</td><td>2015-02-28 13:30:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/78ea5dc3b9c7ce0254326f54bfeb115c006e50d9">78ea5dc3b9c7: Merge pull request #11 from mateunho/fixes</a></td><td class="number">114</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">116</td></tr>
+<tr><td class="symbol"></td><td>2015-06-03 15:41:19</td><td class="commit"><a href="https://github.com/parallella/pal/commit/52e3e54cb0f1165a33da007e2f190abd6da7c58c">52e3e54cb0f1: Merge pull request #64 from technopolymath/master</a></td><td class="number decrease">100</td></tr>
+<tr><td class="symbol"></td><td>2015-06-03 17:07:03</td><td class="commit"><a href="https://github.com/parallella/pal/commit/8ab352ae820d14b380125a770af4b962bab943d3">8ab352ae820d: Merge branch 'pr-65'</a></td><td class="number decrease">80</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">78</td></tr>
+<tr><td class="symbol"></td><td>2015-06-17 22:10:39</td><td class="commit"><a href="https://github.com/parallella/pal/commit/146314e4844093ec36aaf40522f3e025ee0bbd42">146314e48440: math: Fix strict-aliasing compiler warnings</a></td><td class="number decrease">74</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_absdiff.c">src/math/p_absdiff.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_absdiff_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">134</td></tr>
+<tr class="newsymbol"><td class="symbol">p_absdiff_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">134</td></tr>
+<tr><td class="symbol"></td><td>2015-06-03 15:41:19</td><td class="commit"><a href="https://github.com/parallella/pal/commit/52e3e54cb0f1165a33da007e2f190abd6da7c58c">52e3e54cb0f1: Merge pull request #64 from technopolymath/master</a></td><td class="number decrease">120</td></tr>
+<tr><td class="symbol"></td><td>2015-06-08 21:42:10</td><td class="commit"><a href="https://github.com/parallella/pal/commit/771234ed24690e6fcb0225f9d4acdc526b1d5916">771234ed2469: Merge pull request #103 from blitmap/absdiff</a></td><td class="number decrease">108</td></tr>
+<tr><td class="symbol"></td><td>2015-06-17 22:10:39</td><td class="commit"><a href="https://github.com/parallella/pal/commit/146314e4844093ec36aaf40522f3e025ee0bbd42">146314e48440: math: Fix strict-aliasing compiler warnings</a></td><td class="number decrease">96</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_acos.c">src/math/p_acos.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_acos_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">74</td></tr>
+<tr class="newsymbol"><td class="symbol">p_acos_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">74</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">76</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">74</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_acosh.c">src/math/p_acosh.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_acosh_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">74</td></tr>
+<tr class="newsymbol"><td class="symbol">p_acosh_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">74</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">76</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">74</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_add.c">src/math/p_add.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_add_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">84</td></tr>
+<tr class="newsymbol"><td class="symbol">p_add_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">84</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_asin.c">src/math/p_asin.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_asin_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">74</td></tr>
+<tr class="newsymbol"><td class="symbol">p_asin_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">74</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">76</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">74</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_asinh.c">src/math/p_asinh.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_asinh_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">74</td></tr>
+<tr class="newsymbol"><td class="symbol">p_asinh_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">74</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">76</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">74</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_atan.c">src/math/p_atan.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_atan_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">82</td></tr>
+<tr class="newsymbol"><td class="symbol">p_atan_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">82</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">84</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">82</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_atan2.c">src/math/p_atan2.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_atan2_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">92</td></tr>
+<tr class="newsymbol"><td class="symbol">p_atan2_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">92</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_atanh.c">src/math/p_atanh.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_atanh_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">74</td></tr>
+<tr class="newsymbol"><td class="symbol">p_atanh_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">74</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">76</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">74</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_cbrt.c">src/math/p_cbrt.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_cbrt_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">84</td></tr>
+<tr><td class="symbol"></td><td>2015-02-21 01:39:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/7386c4131bda7fbed99023eb2073aa066e8bb6ba">7386c4131bda: math: s/cbtrf/cbrtf</a></td><td class="number decrease">74</td></tr>
+<tr class="newsymbol"><td class="symbol">p_cbrt_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">74</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">76</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">74</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_cos.c">src/math/p_cos.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_cos_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">74</td></tr>
+<tr class="newsymbol"><td class="symbol">p_cos_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">74</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">76</td></tr>
+<tr><td class="symbol"></td><td>2015-06-03 01:24:30</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a574cc5a605d106e9c8e212df344fb3f7e202ed6">a574cc5a605d: Merge pull request #62 from wtfuzz/master</a></td><td class="number increase">344</td></tr>
+<tr><td class="symbol"></td><td>2015-06-03 15:38:59</td><td class="commit"><a href="https://github.com/parallella/pal/commit/c2d60056d38a60730587b46272c82db682a37fef">c2d60056d38a: Merge pull request #63 from wtfuzz/master</a></td><td class="number increase">608</td></tr>
+<tr><td class="symbol"></td><td>2015-06-08 21:19:50</td><td class="commit"><a href="https://github.com/parallella/pal/commit/87f298c24c6c149cfb132b28e4cfd73653c63d05">87f298c24c6c: Making all constants single precision -avoids h...</a></td><td class="number decrease">604</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">596</td></tr>
+<tr><td class="symbol"></td><td>2015-06-15 15:50:21</td><td class="commit"><a href="https://github.com/parallella/pal/commit/6896ba5a441651d48978f25c9d993e7e89133485">6896ba5a4416: Merge pull request #139 from kfitch/bettercos</a></td><td class="number decrease">572</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_cosh.c">src/math/p_cosh.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_cosh_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">74</td></tr>
+<tr class="newsymbol"><td class="symbol">p_cosh_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">74</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">76</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">74</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_div.c">src/math/p_div.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_div_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">84</td></tr>
+<tr class="newsymbol"><td class="symbol">p_div_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">84</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_dot.c">src/math/p_dot.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_dot_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">96</td></tr>
+<tr class="newsymbol"><td class="symbol">p_dot_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">96</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_exp.c">src/math/p_exp.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_exp_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">74</td></tr>
+<tr class="newsymbol"><td class="symbol">p_exp_f32</td><td>2015-02-28 13:30:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/78ea5dc3b9c7ce0254326f54bfeb115c006e50d9">78ea5dc3b9c7: Merge pull request #11 from mateunho/fixes</a></td><td class="number">74</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">76</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">74</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_ftoi.c">src/math/p_ftoi.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_ftoi</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">22</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">24</td></tr>
+<tr><td class="symbol"></td><td>2015-06-04 05:37:31</td><td class="commit"><a href="https://github.com/parallella/pal/commit/400233f67a49e15d63490ca8d06426cb4fac2cf8">400233f67a49: Merge pull request #73 from twocs/patch-2</a></td><td class="number increase">136</td></tr>
+<tr><td class="symbol"></td><td>2015-06-07 12:17:28</td><td class="commit"><a href="https://github.com/parallella/pal/commit/d3cf4e40d143eb57a3ba61001b8248566961fbb0">d3cf4e40d143: Merge branch 'pr-91-squash'</a></td><td class="number decrease">128</td></tr>
+<tr><td class="symbol"></td><td>2015-06-07 13:05:04</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a30b5c15e30d0c53009ce52621c7756e9f493857">a30b5c15e30d: Merge remote-tracking branch 'origin/pr/98'</a></td><td class="number decrease">110</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">108</td></tr>
+<tr><td class="symbol"></td><td>2015-06-17 22:10:39</td><td class="commit"><a href="https://github.com/parallella/pal/commit/146314e4844093ec36aaf40522f3e025ee0bbd42">146314e48440: math: Fix strict-aliasing compiler warnings</a></td><td class="number decrease">104</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_inv.c">src/math/p_inv.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_inv_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">74</td></tr>
+<tr class="newsymbol"><td class="symbol">p_inv_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">74</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">76</td></tr>
+<tr><td class="symbol"></td><td>2015-06-08 21:44:02</td><td class="commit"><a href="https://github.com/parallella/pal/commit/d52efd055cc06f5c3bcaedbf7997492a6401e39f">d52efd055cc0: Merge pull request #99 from algorithm314/master</a></td><td class="number increase">182</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">180</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_invcbrt.c">src/math/p_invcbrt.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_invcbrt_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">92</td></tr>
+<tr><td class="symbol"></td><td>2015-02-21 01:39:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/7386c4131bda7fbed99023eb2073aa066e8bb6ba">7386c4131bda: math: s/cbtrf/cbrtf</a></td><td class="number decrease">82</td></tr>
+<tr class="newsymbol"><td class="symbol">p_invcbrt_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">82</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">84</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">82</td></tr>
+<tr><td class="symbol"></td><td>2015-06-15 15:49:15</td><td class="commit"><a href="https://github.com/parallella/pal/commit/fc926c17078481d5a39259bda4b11e0de2d3c2e0">fc926c170784: Merge pull request #135 from AlgimantasB/master</a></td><td class="number increase">192</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_invsqrt.c">src/math/p_invsqrt.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_invsqrt_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">82</td></tr>
+<tr class="newsymbol"><td class="symbol">p_invsqrt_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">82</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">84</td></tr>
+<tr><td class="symbol"></td><td>2015-06-07 19:38:39</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bc609e15402897f5e2d8736222f6041f3ab33819">bc609e154028: Merge remote-tracking branch 'origin/pr/95' int...</a></td><td class="number increase">188</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">186</td></tr>
+<tr><td class="symbol"></td><td>2015-06-16 09:01:22</td><td class="commit"><a href="https://github.com/parallella/pal/commit/e3d4e3cee5e4bb03193ae3137ab648bb66e0fe8b">e3d4e3cee5e4: Merge remote-tracking branch 'origin/pr/146'</a></td><td class="number increase">226</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_itof.c">src/math/p_itof.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_itof</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">22</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">24</td></tr>
+<tr><td class="symbol"></td><td>2015-06-05 20:56:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/99ad46ed5b9382bf3875b22ce48819f924e45baf">99ad46ed5b93: Merge pull request #82 from povrazor/master</a></td><td class="number increase">74</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">72</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_ln.c">src/math/p_ln.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_ln_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">74</td></tr>
+<tr class="newsymbol"><td class="symbol">p_ln_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">74</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">76</td></tr>
+<tr><td class="symbol"></td><td>2015-06-08 21:46:30</td><td class="commit"><a href="https://github.com/parallella/pal/commit/e14b56a5b05ff3b642d7cf16948386debcf2066b">e14b56a5b05f: Merge pull request #94 from warrenm/fastln</a></td><td class="number increase">192</td></tr>
+<tr><td class="symbol"></td><td>2015-06-16 09:08:43</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a71d1d6b39ea072581aa72186f7ed8571376027a">a71d1d6b39ea: math:p_ln: Use M_LN2 instead of 'magic number'</a></td><td class="number increase">208</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_log10.c">src/math/p_log10.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_log10_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">74</td></tr>
+<tr class="newsymbol"><td class="symbol">p_log10_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">74</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">76</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">74</td></tr>
+<tr><td class="symbol"></td><td>2015-06-16 09:01:22</td><td class="commit"><a href="https://github.com/parallella/pal/commit/e3d4e3cee5e4bb03193ae3137ab648bb66e0fe8b">e3d4e3cee5e4: Merge remote-tracking branch 'origin/pr/146'</a></td><td class="number increase">96</td></tr>
+<tr><td class="symbol"></td><td>2015-06-16 09:03:00</td><td class="commit"><a href="https://github.com/parallella/pal/commit/1b290a2d84c3903830559a2698406ea135aae6aa">1b290a2d84c3: math:p_log10: Use multiplication instead of div...</a></td><td class="number decrease">84</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_mac.c">src/math/p_mac.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_mac_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">100</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mac_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">100</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_max.c">src/math/p_max.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_max_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">110</td></tr>
+<tr class="newsymbol"><td class="symbol">p_max_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">110</td></tr>
+<tr><td class="symbol"></td><td>2015-02-28 15:02:37</td><td class="commit"><a href="https://github.com/parallella/pal/commit/38aa705ce796301e92236b438b29ebdc59f7917c">38aa705ce796: Merge pull request #13 from mateunho/fixes</a></td><td class="number decrease">104</td></tr>
+<tr><td class="symbol"></td><td>2015-03-05 12:39:45</td><td class="commit"><a href="https://github.com/parallella/pal/commit/17060b4c0c9ba2136aed53c7308483241d174ca4">17060b4c0c9b: Merge pull request #27 from mateunho/fixes</a></td><td class="number increase">108</td></tr>
+<tr><td class="symbol"></td><td>2015-06-03 15:41:19</td><td class="commit"><a href="https://github.com/parallella/pal/commit/52e3e54cb0f1165a33da007e2f190abd6da7c58c">52e3e54cb0f1: Merge pull request #64 from technopolymath/master</a></td><td class="number increase">180</td></tr>
+<tr><td class="symbol"></td><td>2015-06-04 05:41:59</td><td class="commit"><a href="https://github.com/parallella/pal/commit/37b4a23a2fc5e98d62e09f59750c199c1378d5cb">37b4a23a2fc5: Merge pull request #72 from twocs/patch-1</a></td><td class="number decrease">142</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_mean.c">src/math/p_mean.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_mean_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">134</td></tr>
+<tr><td class="symbol"></td><td>2015-02-27 13:38:58</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bea20a4ef2e5dedffae39d477d0ff327db7febe2">bea20a4ef2e5: Fix a couple of compiler warnings</a></td><td class="number increase">138</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mean_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">138</td></tr>
+<tr><td class="symbol"></td><td>2015-02-28 15:02:37</td><td class="commit"><a href="https://github.com/parallella/pal/commit/38aa705ce796301e92236b438b29ebdc59f7917c">38aa705ce796: Merge pull request #13 from mateunho/fixes</a></td><td class="number decrease">108</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">110</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:34:00</td><td class="commit"><a href="https://github.com/parallella/pal/commit/25154fa1ed7cc74ed5db619bebee6aa139428b74">25154fa1ed7c: Merge branch 'master' of https://github.com/aol...</a></td><td class="number decrease">98</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">96</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_median.c">src/math/p_median.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">median_partition</td><td>2015-06-07 19:23:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/e971545035c361ab12df044da964cc3267679b0f">e971545035c3: Merge remote-tracking branch 'origin/pr/69' int...</a></td><td class="number">162</td></tr>
+<tr class="newsymbol"><td class="symbol">p_median_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">22</td></tr>
+<tr class="newsymbol"><td class="symbol">p_median_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">22</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">24</td></tr>
+<tr><td class="symbol"></td><td>2015-06-02 20:41:45</td><td class="commit"><a href="https://github.com/parallella/pal/commit/2dc2a5df04ca602fe51bc98a96de559ce5d729b7">2dc2a5df04ca: Merge pull request #56 from 6thimage/master</a></td><td class="number increase">204</td></tr>
+<tr><td class="symbol"></td><td>2015-06-03 01:19:10</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4ae9cb027fff9d762806f8b95094b5e3889da8fb">4ae9cb027fff: Merge pull request #60 from 6thimage/master</a></td><td class="number decrease">192</td></tr>
+<tr><td class="symbol"></td><td>2015-06-07 19:23:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/e971545035c361ab12df044da964cc3267679b0f">e971545035c3: Merge remote-tracking branch 'origin/pr/69' int...</a></td><td class="number increase">280</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">278</td></tr>
+<tr class="newsymbol"><td class="symbol">swap</td><td>2015-06-07 19:23:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/e971545035c361ab12df044da964cc3267679b0f">e971545035c3: Merge remote-tracking branch 'origin/pr/69' int...</a></td><td class="number">40</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_min.c">src/math/p_min.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_min_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">100</td></tr>
+<tr class="newsymbol"><td class="symbol">p_min_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">100</td></tr>
+<tr><td class="symbol"></td><td>2015-03-05 12:39:45</td><td class="commit"><a href="https://github.com/parallella/pal/commit/17060b4c0c9ba2136aed53c7308483241d174ca4">17060b4c0c9b: Merge pull request #27 from mateunho/fixes</a></td><td class="number increase">108</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_mode.c">src/math/p_mode.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_mode_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">22</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mode_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">22</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">24</td></tr>
+<tr><td class="symbol"></td><td>2015-06-04 05:42:21</td><td class="commit"><a href="https://github.com/parallella/pal/commit/c34fda6baee2dd553420ff99a19a631999569641">c34fda6baee2: Merge pull request #52 from WesleyCeraso/master</a></td><td class="number increase">206</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">198</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_mul.c">src/math/p_mul.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_mul_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">84</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mul_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">84</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_popcount.c">src/math/p_popcount.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">A.5850</td><td>2015-03-06 15:34:00</td><td class="commit"><a href="https://github.com/parallella/pal/commit/25154fa1ed7cc74ed5db619bebee6aa139428b74">25154fa1ed7c: Merge branch 'master' of https://github.com/aol...</a></td><td class="number">16</td></tr>
+<tr class="newsymbol"><td class="symbol">A.5866</td><td>2015-03-06 23:59:45</td><td class="commit"><a href="https://github.com/parallella/pal/commit/14c0705cc3f279342383f1b79ded8167e214b248">14c0705cc3f2: DSP library API change -Changing to new APi wit...</a></td><td class="number">16</td></tr>
+<tr class="newsymbol"><td class="symbol">A.5881</td><td>2015-03-07 00:21:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/313b73c1cbd624bf8b0939842c45b1e8e635c643">313b73c1cbd6: Image library API change -added new parallelism...</a></td><td class="number">16</td></tr>
+<tr class="newsymbol"><td class="symbol">A.5896</td><td>2015-03-07 21:00:46</td><td class="commit"><a href="https://github.com/parallella/pal/commit/8f7cf552314d3302af3c3b1b5113b85ee6c0fc69">8f7cf552314d: Merge branch 'master' of https://github.com/aol...</a></td><td class="number">32</td></tr>
+<tr class="newsymbol"><td class="symbol">A.6802</td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number">16</td></tr>
+<tr class="newsymbol"><td class="symbol">A.6803</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">16</td></tr>
+<tr class="newsymbol"><td class="symbol">A.6815</td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number">32</td></tr>
+<tr class="newsymbol"><td class="symbol">A.6816</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">32</td></tr>
+<tr class="newsymbol"><td class="symbol">A.6918</td><td>2015-06-04 06:11:46</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f17972a19ecbb3e3824640844ca4bfc7cf868802">f17972a19ecb: Fixing 'sad' interface, old one made no sense</a></td><td class="number">16</td></tr>
+<tr class="newsymbol"><td class="symbol">A.6920</td><td>2015-04-27 14:47:34</td><td class="commit"><a href="https://github.com/parallella/pal/commit/ea107e5c917cd29d9d3204d6f9fcace342eeb925">ea107e5c917c: Fix compiler warnings</a></td><td class="number">16</td></tr>
+<tr class="newsymbol"><td class="symbol">A.6926</td><td>2015-06-05 02:24:12</td><td class="commit"><a href="https://github.com/parallella/pal/commit/eae3dfc883869626ecbb44df1ae67f9c9b9c74b8">eae3dfc88386: Merge pull request #77 from anael-seghezzi/image</a></td><td class="number">16</td></tr>
+<tr class="newsymbol"><td class="symbol">A.6932</td><td>2015-06-08 22:56:19</td><td class="commit"><a href="https://github.com/parallella/pal/commit/93c24ad7af0023700e5c930d197cb6a57663382e">93c24ad7af00: Merge pull request #104 from HenryJia/stddev</a></td><td class="number">16</td></tr>
+<tr class="newsymbol"><td class="symbol">A.6933</td><td>2015-06-04 06:11:46</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f17972a19ecbb3e3824640844ca4bfc7cf868802">f17972a19ecb: Fixing 'sad' interface, old one made no sense</a></td><td class="number">32</td></tr>
+<tr class="newsymbol"><td class="symbol">A.6935</td><td>2015-04-27 14:47:34</td><td class="commit"><a href="https://github.com/parallella/pal/commit/ea107e5c917cd29d9d3204d6f9fcace342eeb925">ea107e5c917c: Fix compiler warnings</a></td><td class="number">32</td></tr>
+<tr class="newsymbol"><td class="symbol">A.6941</td><td>2015-06-05 02:24:12</td><td class="commit"><a href="https://github.com/parallella/pal/commit/eae3dfc883869626ecbb44df1ae67f9c9b9c74b8">eae3dfc88386: Merge pull request #77 from anael-seghezzi/image</a></td><td class="number">32</td></tr>
+<tr class="newsymbol"><td class="symbol">A.6947</td><td>2015-06-08 22:56:19</td><td class="commit"><a href="https://github.com/parallella/pal/commit/93c24ad7af0023700e5c930d197cb6a57663382e">93c24ad7af00: Merge pull request #104 from HenryJia/stddev</a></td><td class="number">32</td></tr>
+<tr class="newsymbol"><td class="symbol">p_popcount_u32</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">20</td></tr>
+<tr><td class="symbol"></td><td>2015-02-27 14:27:59</td><td class="commit"><a href="https://github.com/parallella/pal/commit/5f63d3c0e1b7e8a997829019b12642781b0e7127">5f63d3c0e1b7: Include pal.h in all API implementation files</a></td><td class="number increase">22</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">24</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:34:00</td><td class="commit"><a href="https://github.com/parallella/pal/commit/25154fa1ed7cc74ed5db619bebee6aa139428b74">25154fa1ed7c: Merge branch 'master' of https://github.com/aol...</a></td><td class="number increase">134</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">132</td></tr>
+<tr class="newsymbol"><td class="symbol">p_popcount_u64</td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number">24</td></tr>
+<tr><td class="symbol"></td><td>2015-03-07 21:00:46</td><td class="commit"><a href="https://github.com/parallella/pal/commit/8f7cf552314d3302af3c3b1b5113b85ee6c0fc69">8f7cf552314d: Merge branch 'master' of https://github.com/aol...</a></td><td class="number increase">258</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">256</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_pow.c">src/math/p_pow.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_pow_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">92</td></tr>
+<tr class="newsymbol"><td class="symbol">p_pow_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">92</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_rand.c">src/math/p_rand.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_rand</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">16</td></tr>
+<tr><td class="symbol"></td><td>2015-02-22 18:16:09</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bc3135370d8e62525797bd3b2f54a4f5fa608097">bc3135370d8e: math: Implement p_rand()</a></td><td class="number increase">20</td></tr>
+<tr class="newsymbol"><td class="symbol">p_srand</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">18</td></tr>
+<tr><td class="symbol"></td><td>2015-02-22 18:16:09</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bc3135370d8e62525797bd3b2f54a4f5fa608097">bc3135370d8e: math: Implement p_rand()</a></td><td class="number increase">28</td></tr>
+<tr class="newsymbol"><td class="symbol">tinymt32_generate_uint32</td><td>2015-02-22 18:16:09</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bc3135370d8e62525797bd3b2f54a4f5fa608097">bc3135370d8e: math: Implement p_rand()</a></td><td class="number">30</td></tr>
+<tr class="newsymbol"><td class="symbol">tinymt32_next_state</td><td>2015-02-22 18:16:09</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bc3135370d8e62525797bd3b2f54a4f5fa608097">bc3135370d8e: math: Implement p_rand()</a></td><td class="number">156</td></tr>
+<tr class="newsymbol"><td class="symbol">tinymt32_temper</td><td>2015-02-22 18:16:09</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bc3135370d8e62525797bd3b2f54a4f5fa608097">bc3135370d8e: math: Implement p_rand()</a></td><td class="number">72</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_sin.c">src/math/p_sin.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_sin_f32</td><td>2015-02-19 13:36:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/65a53c63a953cdd23f180b6c7bfd9064673c2fae">65a53c63a953: build: Add infrastructure for building math</a></td><td class="number">74</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">76</td></tr>
+<tr><td class="symbol"></td><td>2015-03-28 02:33:52</td><td class="commit"><a href="https://github.com/parallella/pal/commit/95dc011722d0392f4cf3076cc170252316aaeb7f">95dc011722d0: Merge branch 'master' of https://github.com/aol...</a></td><td class="number increase">94</td></tr>
+<tr><td class="symbol"></td><td>2015-06-03 01:24:30</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a574cc5a605d106e9c8e212df344fb3f7e202ed6">a574cc5a605d: Merge pull request #62 from wtfuzz/master</a></td><td class="number increase">360</td></tr>
+<tr><td class="symbol"></td><td>2015-06-03 15:38:59</td><td class="commit"><a href="https://github.com/parallella/pal/commit/c2d60056d38a60730587b46272c82db682a37fef">c2d60056d38a: Merge pull request #63 from wtfuzz/master</a></td><td class="number increase">712</td></tr>
+<tr><td class="symbol"></td><td>2015-06-08 21:10:16</td><td class="commit"><a href="https://github.com/parallella/pal/commit/8186e68d2bbdf87cfce49146db5ee60a5acc5430">8186e68d2bbd: Optimizing for 32 bit float -how to treat const...</a></td><td class="number decrease">420</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_sincos.c">src/math/p_sincos.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_sincos_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">22</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sincos_f32</td><td>2015-02-28 13:30:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/78ea5dc3b9c7ce0254326f54bfeb115c006e50d9">78ea5dc3b9c7: Merge pull request #11 from mateunho/fixes</a></td><td class="number">22</td></tr>
+<tr><td class="symbol"></td><td>2015-02-28 20:30:05</td><td class="commit"><a href="https://github.com/parallella/pal/commit/df3648a3e7f9bfbe70ea803a11fdceb22ffb6bfb">df3648a3e7f9: Documentation fixes</a></td><td class="number increase">24</td></tr>
+<tr><td class="symbol"></td><td>2015-03-07 21:00:46</td><td class="commit"><a href="https://github.com/parallella/pal/commit/8f7cf552314d3302af3c3b1b5113b85ee6c0fc69">8f7cf552314d: Merge branch 'master' of https://github.com/aol...</a></td><td class="number increase">52</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">40</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_sinh.c">src/math/p_sinh.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_sinh_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">74</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sinh_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">74</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">76</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">74</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_sort.c">src/math/p_sort.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_heapsort_f32</td><td>2015-06-02 19:10:11</td><td class="commit"><a href="https://github.com/parallella/pal/commit/300e731d81a1a37df99629c9b9eff4d24cef50f2">300e731d81a1: Merge pull request #50 from wejn/48-p_sort</a></td><td class="number">174</td></tr>
+<tr class="newsymbol"><td class="symbol">_heapsort_u32</td><td>2015-06-02 19:10:11</td><td class="commit"><a href="https://github.com/parallella/pal/commit/300e731d81a1a37df99629c9b9eff4d24cef50f2">300e731d81a1: Merge pull request #50 from wejn/48-p_sort</a></td><td class="number">174</td></tr>
+<tr class="newsymbol"><td class="symbol">_sift_down_f32</td><td>2015-06-02 19:10:11</td><td class="commit"><a href="https://github.com/parallella/pal/commit/300e731d81a1a37df99629c9b9eff4d24cef50f2">300e731d81a1: Merge pull request #50 from wejn/48-p_sort</a></td><td class="number">202</td></tr>
+<tr class="newsymbol"><td class="symbol">_sift_down_u32</td><td>2015-06-02 19:10:11</td><td class="commit"><a href="https://github.com/parallella/pal/commit/300e731d81a1a37df99629c9b9eff4d24cef50f2">300e731d81a1: Merge pull request #50 from wejn/48-p_sort</a></td><td class="number">182</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sort_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">22</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sort_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">22</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">24</td></tr>
+<tr><td class="symbol"></td><td>2015-06-02 19:10:11</td><td class="commit"><a href="https://github.com/parallella/pal/commit/300e731d81a1a37df99629c9b9eff4d24cef50f2">300e731d81a1: Merge pull request #50 from wejn/48-p_sort</a></td><td class="number increase">30</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">28</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sort_u32</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">22</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">24</td></tr>
+<tr><td class="symbol"></td><td>2015-06-02 19:10:11</td><td class="commit"><a href="https://github.com/parallella/pal/commit/300e731d81a1a37df99629c9b9eff4d24cef50f2">300e731d81a1: Merge pull request #50 from wejn/48-p_sort</a></td><td class="number increase">30</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">28</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_sqrt.c">src/math/p_sqrt.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_sqrt_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">74</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sqrt_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">74</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">76</td></tr>
+<tr><td class="symbol"></td><td>2015-06-02 20:42:39</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b7db7b1ee5b0e2fe154fc9d722b9c86ce729c2ad">b7db7b1ee5b0: Merge pull request #55 from wtfuzz/master</a></td><td class="number increase">212</td></tr>
+<tr><td class="symbol"></td><td>2015-06-08 21:49:29</td><td class="commit"><a href="https://github.com/parallella/pal/commit/117b488a8c533f2d3adbfab35976533849910ef3">117b488a8c53: Merge pull request #105 from HenryJia/sqrt</a></td><td class="number increase">252</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">250</td></tr>
+<tr><td class="symbol"></td><td>2015-06-17 22:10:39</td><td class="commit"><a href="https://github.com/parallella/pal/commit/146314e4844093ec36aaf40522f3e025ee0bbd42">146314e48440: math: Fix strict-aliasing compiler warnings</a></td><td class="number decrease">246</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_stddev.c">src/math/p_stddev.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_stddev_f32</td><td>2015-06-12 10:27:35</td><td class="commit"><a href="https://github.com/parallella/pal/commit/caf78c34accc4a0eee9980f6144be92daec47eb3">caf78c34accc: Merge remote-tracking branch 'origin/pr/113' in...</a></td><td class="number">398</td></tr>
+<tr><td class="symbol"></td><td>2015-06-17 22:10:39</td><td class="commit"><a href="https://github.com/parallella/pal/commit/146314e4844093ec36aaf40522f3e025ee0bbd42">146314e48440: math: Fix strict-aliasing compiler warnings</a></td><td class="number decrease">390</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_sub.c">src/math/p_sub.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_sub_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">84</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sub_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">84</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_sum.c">src/math/p_sum.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_sum_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">96</td></tr>
+<tr><td class="symbol"></td><td>2015-02-27 13:38:58</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bea20a4ef2e5dedffae39d477d0ff327db7febe2">bea20a4ef2e5: Fix a couple of compiler warnings</a></td><td class="number increase">100</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sum_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">100</td></tr>
+<tr><td class="symbol"></td><td>2015-02-28 15:02:37</td><td class="commit"><a href="https://github.com/parallella/pal/commit/38aa705ce796301e92236b438b29ebdc59f7917c">38aa705ce796: Merge pull request #13 from mateunho/fixes</a></td><td class="number decrease">82</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">84</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:34:00</td><td class="commit"><a href="https://github.com/parallella/pal/commit/25154fa1ed7cc74ed5db619bebee6aa139428b74">25154fa1ed7c: Merge branch 'master' of https://github.com/aol...</a></td><td class="number decrease">80</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">78</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_sumsq.c">src/math/p_sumsq.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_sumsq_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">112</td></tr>
+<tr><td class="symbol"></td><td>2015-02-27 13:38:58</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bea20a4ef2e5dedffae39d477d0ff327db7febe2">bea20a4ef2e5: Fix a couple of compiler warnings</a></td><td class="number increase">116</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sumsq_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">116</td></tr>
+<tr><td class="symbol"></td><td>2015-02-28 15:02:37</td><td class="commit"><a href="https://github.com/parallella/pal/commit/38aa705ce796301e92236b438b29ebdc59f7917c">38aa705ce796: Merge pull request #13 from mateunho/fixes</a></td><td class="number decrease">98</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">100</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:34:00</td><td class="commit"><a href="https://github.com/parallella/pal/commit/25154fa1ed7cc74ed5db619bebee6aa139428b74">25154fa1ed7c: Merge branch 'master' of https://github.com/aol...</a></td><td class="number decrease">96</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">94</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_tan.c">src/math/p_tan.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_tan_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">74</td></tr>
+<tr class="newsymbol"><td class="symbol">p_tan_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">74</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">76</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">74</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_tanh.c">src/math/p_tanh.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_tanh_32f</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">74</td></tr>
+<tr class="newsymbol"><td class="symbol">p_tanh_f32</td><td>2015-02-28 02:39:18</td><td class="commit"><a href="https://github.com/parallella/pal/commit/86911dcbe531cc7de6679c4c8f1fc1377d37bb83">86911dcbe531: Merge pull request #9 from mateunho/fixes</a></td><td class="number">74</td></tr>
+<tr><td class="symbol"></td><td>2015-03-06 15:17:24</td><td class="commit"><a href="https://github.com/parallella/pal/commit/a380f6b70b8461dbb8c0def388d00270f8b27c28">a380f6b70b84: Major API update, adding task/thread parallelis...</a></td><td class="number increase">76</td></tr>
+<tr><td class="symbol"></td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number decrease">74</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/tinymt/tinymt32.c">src/math/tinymt/tinymt32.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">ini_func1</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">40</td></tr>
+<tr class="newsymbol"><td class="symbol">ini_func2</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">40</td></tr>
+<tr class="newsymbol"><td class="symbol">period_certification</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">78</td></tr>
+<tr class="newsymbol"><td class="symbol">tinymt32_init</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">168</td></tr>
+<tr class="newsymbol"><td class="symbol">tinymt32_init_by_array</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">998</td></tr>
+<tr class="newsymbol"><td class="symbol">tinymt32_next_state</td><td>2015-02-21 01:32:51</td><td class="commit"><a href="https://github.com/parallella/pal/commit/4d0a56111eda48a83f72eaefe88d9e19d5b1921c">4d0a56111eda: build/math: Build all math files</a></td><td class="number">156</td></tr>
+</table>
+</body>
+</html>
