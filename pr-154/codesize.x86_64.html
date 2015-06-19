@@ -1,0 +1,698 @@
+<html>
+<head>
+<title>PAL code size report for x86_64</title>
+<style>
+.increase {
+    background-color: red;
+}
+.decrease {
+    background-color: green;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #222;
+}
+th {
+    border-bottom: 1px solid #222;
+}
+tr.newsymbol {
+    border-top: 1px solid #222;
+}
+td, th {
+    border-left: 1px solid #222;
+    border-right: 1px solid #222;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.commit, .commit a, .symbol {
+    font-family: "Courier New", Courier, monospace;
+}
+.commit, .commit a {
+    min-width: 64ch;
+}
+.symbol {
+    min-width: 24ch;
+}
+.number {
+    text-align: right;
+    min-width: 6ch;
+}
+</style>
+</head>
+<body>
+<h1>PAL code size report for x86_64</h1>
+<p>Latest commit: 90e0cfc64db07a2137c800918b004b2ea35aa5f4</p>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/boilerplate.c">src/base/boilerplate.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">__pal_fini</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">108</td></tr>
+<tr class="newsymbol"><td class="symbol">__pal_global</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">176</td></tr>
+<tr class="newsymbol"><td class="symbol">__pal_init</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">6</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_append.c">src/base/p_append.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_append</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">48</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_add.c">src/base/p_atomic_add.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_atomic_add_u32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">18</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_and.c">src/base/p_atomic_and.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_atomic_and_u32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">18</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_compswap.c">src/base/p_atomic_compswap.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_atomic_compswap_u32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">22</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_or.c">src/base/p_atomic_or.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_atomic_or_u32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">18</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_sub.c">src/base/p_atomic_sub.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_atomic_sub_u32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">18</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_swap.c">src/base/p_atomic_swap.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_atomic_swap_u32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">19</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_xor.c">src/base/p_atomic_xor.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_atomic_xor_u32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">18</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_barrier.c">src/base/p_barrier.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_barrier</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">41</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_close.c">src/base/p_close.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_close</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">64</td></tr>
+<tr class="newsymbol"><td class="symbol">p_ref_is_err</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">23</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_fence.c">src/base/p_fence.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_fence</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">41</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_finalize.c">src/base/p_finalize.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_finalize</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">92</td></tr>
+<tr class="newsymbol"><td class="symbol">p_ref_is_err</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">23</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_free.c">src/base/p_free.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_free</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">41</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_gather.c">src/base/p_gather.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_gather</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">34</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_get_err.c">src/base/p_get_err.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_get_err</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">26</td></tr>
+<tr class="newsymbol"><td class="symbol">p_ref_get_err</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">41</td></tr>
+<tr class="newsymbol"><td class="symbol">p_ref_is_err</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">23</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_getaddr.c">src/base/p_getaddr.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_getaddr</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">15</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_getsymbol.c">src/base/p_getsymbol.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_getsymbol</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">23</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_init.c">src/base/p_init.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_init</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">115</td></tr>
+<tr class="newsymbol"><td class="symbol">p_ref_err</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">16</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_load.c">src/base/p_load.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_load</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">225</td></tr>
+<tr class="newsymbol"><td class="symbol">p_ref_err</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">16</td></tr>
+<tr class="newsymbol"><td class="symbol">p_ref_is_err</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">23</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_malloc.c">src/base/p_malloc.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_malloc</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">56</td></tr>
+<tr class="newsymbol"><td class="symbol">p_ref_err</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">16</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_memcpy.c">src/base/p_memcpy.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_memcpy</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">26</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_mutex_destroy.c">src/base/p_mutex_destroy.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_mutex_destroy</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">15</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_mutex_init.c">src/base/p_mutex_init.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_mutex_init</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">15</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_mutex_lock.c">src/base/p_mutex_lock.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_mutex_lock</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">15</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_mutex_trylock.c">src/base/p_mutex_trylock.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_mutex_trylock</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">15</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_mutex_unlock.c">src/base/p_mutex_unlock.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_mutex_unlock</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">15</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_open.c">src/base/p_open.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_open</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">224</td></tr>
+<tr class="newsymbol"><td class="symbol">p_ref_err</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">16</td></tr>
+<tr class="newsymbol"><td class="symbol">p_ref_is_err</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">23</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_query.c">src/base/p_query.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_query</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">73</td></tr>
+<tr class="newsymbol"><td class="symbol">p_ref_is_err</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">23</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_read.c">src/base/p_read.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_read</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">75</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_remove.c">src/base/p_remove.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_remove</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">21</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_rmalloc.c">src/base/p_rmalloc.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_ref_err</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">16</td></tr>
+<tr class="newsymbol"><td class="symbol">p_rmalloc</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">57</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_run.c">src/base/p_run.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_ref_is_err</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">23</td></tr>
+<tr class="newsymbol"><td class="symbol">p_run</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">198</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_wait.c">src/base/p_wait.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_ref_is_err</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">23</td></tr>
+<tr class="newsymbol"><td class="symbol">p_wait</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">90</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_write.c">src/base/p_write.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_write</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">70</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_acorr.c">src/dsp/p_acorr.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_acorr_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">175</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_conv.c">src/dsp/p_conv.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_conv_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">252</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_fir.c">src/dsp/p_fir.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_fir_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">2090</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_firdec.c">src/dsp/p_firdec.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_firdec_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">29</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_firint.c">src/dsp/p_firint.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_firint_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">29</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_firsym.c">src/dsp/p_firsym.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_firsym_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">25</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_iir.c">src/dsp/p_iir.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">coeffs</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">64</td></tr>
+<tr class="newsymbol"><td class="symbol">p_iir_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">2822</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_xcorr.c">src/dsp/p_xcorr.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_xcorr_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">680</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/fft/p_cfft.c">src/fft/p_cfft.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_cfft</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">20</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_box3x3.c">src/image/p_box3x3.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_box3x3_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">497</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_conv2d.c">src/image/p_conv2d.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_conv2d_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">334</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_gauss3x3.c">src/image/p_gauss3x3.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_gauss3x3_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">460</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_harris3x3.c">src/image/p_harris3x3.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_sst3x3</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">587</td></tr>
+<tr class="newsymbol"><td class="symbol">p_harris3x3_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">1146</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_laplace3x3.c">src/image/p_laplace3x3.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_laplace3x3_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">393</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_median3x3.c">src/image/p_median3x3.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">opt_med9</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">691</td></tr>
+<tr class="newsymbol"><td class="symbol">p_median3x3_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">481</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_prewitt3x3.c">src/image/p_prewitt3x3.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_prewitt3x3_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">591</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_sad16x16.c">src/image/p_sad16x16.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_sad16x16_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">21</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_sad8x8.c">src/image/p_sad8x8.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_sad8x8_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">21</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_scharr3x3.c">src/image/p_scharr3x3.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_scharr3x3_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">883</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_sobel3x3.c">src/image/p_sobel3x3.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_sobel3x3_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">4007</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_a_inv.c">src/math/p_a_inv.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_a_inv_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">387</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_abs.c">src/math/p_abs.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_abs_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">102</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_absdiff.c">src/math/p_absdiff.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_absdiff_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">147</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_acos.c">src/math/p_acos.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_acos_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">114</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_acosh.c">src/math/p_acosh.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_acosh_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">114</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_add.c">src/math/p_add.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_add_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">120</td></tr>
+<tr><td class="symbol"></td><td>2015-06-17 00:18:19</td><td class="commit"><a href="https://github.com/parallella/pal/commit/207f87585499cc5382e39fddfe4c0acaf822a841">207f87585499: Fixed description for scalar function.</a></td><td class="number increase">168</td></tr>
+<tr><td class="symbol"></td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number decrease">139</td></tr>
+<tr class="newsymbol"><td class="symbol">p_add_int16</td><td>2015-06-17 00:18:19</td><td class="commit"><a href="https://github.com/parallella/pal/commit/207f87585499cc5382e39fddfe4c0acaf822a841">207f87585499: Fixed description for scalar function.</a></td><td class="number">144</td></tr>
+<tr><td class="symbol"></td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number decrease">121</td></tr>
+<tr class="newsymbol"><td class="symbol">p_add_int32</td><td>2015-06-17 00:18:19</td><td class="commit"><a href="https://github.com/parallella/pal/commit/207f87585499cc5382e39fddfe4c0acaf822a841">207f87585499: Fixed description for scalar function.</a></td><td class="number">148</td></tr>
+<tr><td class="symbol"></td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number decrease">123</td></tr>
+<tr class="newsymbol"><td class="symbol">p_add_int64</td><td>2015-06-17 00:18:19</td><td class="commit"><a href="https://github.com/parallella/pal/commit/207f87585499cc5382e39fddfe4c0acaf822a841">207f87585499: Fixed description for scalar function.</a></td><td class="number">158</td></tr>
+<tr><td class="symbol"></td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number decrease">131</td></tr>
+<tr class="newsymbol"><td class="symbol">p_add_int8</td><td>2015-06-17 00:18:19</td><td class="commit"><a href="https://github.com/parallella/pal/commit/207f87585499cc5382e39fddfe4c0acaf822a841">207f87585499: Fixed description for scalar function.</a></td><td class="number">128</td></tr>
+<tr><td class="symbol"></td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number decrease">110</td></tr>
+<tr class="newsymbol"><td class="symbol">p_add_uint16</td><td>2015-06-17 00:18:19</td><td class="commit"><a href="https://github.com/parallella/pal/commit/207f87585499cc5382e39fddfe4c0acaf822a841">207f87585499: Fixed description for scalar function.</a></td><td class="number">139</td></tr>
+<tr><td class="symbol"></td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number decrease">117</td></tr>
+<tr class="newsymbol"><td class="symbol">p_add_uint32</td><td>2015-06-17 00:18:19</td><td class="commit"><a href="https://github.com/parallella/pal/commit/207f87585499cc5382e39fddfe4c0acaf822a841">207f87585499: Fixed description for scalar function.</a></td><td class="number">148</td></tr>
+<tr><td class="symbol"></td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number decrease">123</td></tr>
+<tr class="newsymbol"><td class="symbol">p_add_uint64</td><td>2015-06-17 00:18:19</td><td class="commit"><a href="https://github.com/parallella/pal/commit/207f87585499cc5382e39fddfe4c0acaf822a841">207f87585499: Fixed description for scalar function.</a></td><td class="number">158</td></tr>
+<tr><td class="symbol"></td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number decrease">131</td></tr>
+<tr class="newsymbol"><td class="symbol">p_add_uint8</td><td>2015-06-17 00:18:19</td><td class="commit"><a href="https://github.com/parallella/pal/commit/207f87585499cc5382e39fddfe4c0acaf822a841">207f87585499: Fixed description for scalar function.</a></td><td class="number">122</td></tr>
+<tr><td class="symbol"></td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number decrease">104</td></tr>
+<tr class="newsymbol"><td class="symbol">p_adds_f32</td><td>2015-06-17 00:18:19</td><td class="commit"><a href="https://github.com/parallella/pal/commit/207f87585499cc5382e39fddfe4c0acaf822a841">207f87585499: Fixed description for scalar function.</a></td><td class="number">149</td></tr>
+<tr><td class="symbol"></td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number decrease">121</td></tr>
+<tr class="newsymbol"><td class="symbol">p_adds_int16</td><td>2015-06-17 00:18:19</td><td class="commit"><a href="https://github.com/parallella/pal/commit/207f87585499cc5382e39fddfe4c0acaf822a841">207f87585499: Fixed description for scalar function.</a></td><td class="number">132</td></tr>
+<tr><td class="symbol"></td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number decrease">109</td></tr>
+<tr class="newsymbol"><td class="symbol">p_adds_int32</td><td>2015-06-17 00:18:19</td><td class="commit"><a href="https://github.com/parallella/pal/commit/207f87585499cc5382e39fddfe4c0acaf822a841">207f87585499: Fixed description for scalar function.</a></td><td class="number">129</td></tr>
+<tr><td class="symbol"></td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number decrease">105</td></tr>
+<tr class="newsymbol"><td class="symbol">p_adds_int64</td><td>2015-06-17 00:18:19</td><td class="commit"><a href="https://github.com/parallella/pal/commit/207f87585499cc5382e39fddfe4c0acaf822a841">207f87585499: Fixed description for scalar function.</a></td><td class="number">139</td></tr>
+<tr><td class="symbol"></td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number decrease">113</td></tr>
+<tr class="newsymbol"><td class="symbol">p_adds_int8</td><td>2015-06-17 00:18:19</td><td class="commit"><a href="https://github.com/parallella/pal/commit/207f87585499cc5382e39fddfe4c0acaf822a841">207f87585499: Fixed description for scalar function.</a></td><td class="number">121</td></tr>
+<tr><td class="symbol"></td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number decrease">101</td></tr>
+<tr class="newsymbol"><td class="symbol">p_adds_uint16</td><td>2015-06-17 00:18:19</td><td class="commit"><a href="https://github.com/parallella/pal/commit/207f87585499cc5382e39fddfe4c0acaf822a841">207f87585499: Fixed description for scalar function.</a></td><td class="number">124</td></tr>
+<tr><td class="symbol"></td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number decrease">103</td></tr>
+<tr class="newsymbol"><td class="symbol">p_adds_uint32</td><td>2015-06-17 00:18:19</td><td class="commit"><a href="https://github.com/parallella/pal/commit/207f87585499cc5382e39fddfe4c0acaf822a841">207f87585499: Fixed description for scalar function.</a></td><td class="number">129</td></tr>
+<tr><td class="symbol"></td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number decrease">105</td></tr>
+<tr class="newsymbol"><td class="symbol">p_adds_uint64</td><td>2015-06-17 00:18:19</td><td class="commit"><a href="https://github.com/parallella/pal/commit/207f87585499cc5382e39fddfe4c0acaf822a841">207f87585499: Fixed description for scalar function.</a></td><td class="number">139</td></tr>
+<tr><td class="symbol"></td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number decrease">113</td></tr>
+<tr class="newsymbol"><td class="symbol">p_adds_uint8</td><td>2015-06-17 00:18:19</td><td class="commit"><a href="https://github.com/parallella/pal/commit/207f87585499cc5382e39fddfe4c0acaf822a841">207f87585499: Fixed description for scalar function.</a></td><td class="number">113</td></tr>
+<tr><td class="symbol"></td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number decrease">95</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_asin.c">src/math/p_asin.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_asin_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">114</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_asinh.c">src/math/p_asinh.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_asinh_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">114</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_atan.c">src/math/p_atan.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_atan_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">116</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_atan2.c">src/math/p_atan2.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_atan2_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">148</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_atanh.c">src/math/p_atanh.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_atanh_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">114</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_cbrt.c">src/math/p_cbrt.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_cbrt_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">114</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_cos.c">src/math/p_cos.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_cos_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">661</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_cosh.c">src/math/p_cosh.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_cosh_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">114</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_div.c">src/math/p_div.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_div_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">120</td></tr>
+<tr><td class="symbol"></td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number increase">139</td></tr>
+<tr class="newsymbol"><td class="symbol">p_div_int16</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">131</td></tr>
+<tr class="newsymbol"><td class="symbol">p_div_int32</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">129</td></tr>
+<tr class="newsymbol"><td class="symbol">p_div_int64</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">140</td></tr>
+<tr class="newsymbol"><td class="symbol">p_div_int8</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">123</td></tr>
+<tr class="newsymbol"><td class="symbol">p_div_uint16</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">133</td></tr>
+<tr class="newsymbol"><td class="symbol">p_div_uint32</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">137</td></tr>
+<tr class="newsymbol"><td class="symbol">p_div_uint64</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">146</td></tr>
+<tr class="newsymbol"><td class="symbol">p_div_uint8</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">112</td></tr>
+<tr class="newsymbol"><td class="symbol">p_divs_f32</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">133</td></tr>
+<tr class="newsymbol"><td class="symbol">p_divs_int16</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">147</td></tr>
+<tr class="newsymbol"><td class="symbol">p_divs_int32</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">145</td></tr>
+<tr class="newsymbol"><td class="symbol">p_divs_int64</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">155</td></tr>
+<tr class="newsymbol"><td class="symbol">p_divs_int8</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">145</td></tr>
+<tr class="newsymbol"><td class="symbol">p_divs_uint16</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">153</td></tr>
+<tr class="newsymbol"><td class="symbol">p_divs_uint32</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">243</td></tr>
+<tr class="newsymbol"><td class="symbol">p_divs_uint64</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">329</td></tr>
+<tr class="newsymbol"><td class="symbol">p_divs_uint8</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">145</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_dot.c">src/math/p_dot.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_dot_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">126</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_exp.c">src/math/p_exp.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_exp_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">114</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_ftoi.c">src/math/p_ftoi.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_ftoi</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">137</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_inv.c">src/math/p_inv.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_inv_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">233</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_invcbrt.c">src/math/p_invcbrt.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_invcbrt_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">258</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_invsqrt.c">src/math/p_invsqrt.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_invsqrt_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">278</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_itof.c">src/math/p_itof.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_itof</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">88</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_ln.c">src/math/p_ln.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_ln_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">237</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_log10.c">src/math/p_log10.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_log10_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">125</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_mac.c">src/math/p_mac.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_mac_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">149</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_max.c">src/math/p_max.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_max_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">183</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_mean.c">src/math/p_mean.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_mean_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">110</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_median.c">src/math/p_median.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">median_partition</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">256</td></tr>
+<tr class="newsymbol"><td class="symbol">p_median_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">381</td></tr>
+<tr class="newsymbol"><td class="symbol">swap</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">44</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_min.c">src/math/p_min.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_min_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">141</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_mode.c">src/math/p_mode.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_mode_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">280</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_mul.c">src/math/p_mul.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_mul_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">120</td></tr>
+<tr><td class="symbol"></td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number increase">139</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mul_int16</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">123</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mul_int32</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">123</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mul_int64</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">131</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mul_int8</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">114</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mul_uint16</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">117</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mul_uint32</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">123</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mul_uint64</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">131</td></tr>
+<tr class="newsymbol"><td class="symbol">p_mul_uint8</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">110</td></tr>
+<tr class="newsymbol"><td class="symbol">p_muls_f32</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">121</td></tr>
+<tr class="newsymbol"><td class="symbol">p_muls_int16</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">111</td></tr>
+<tr class="newsymbol"><td class="symbol">p_muls_int32</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">107</td></tr>
+<tr class="newsymbol"><td class="symbol">p_muls_int64</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">115</td></tr>
+<tr class="newsymbol"><td class="symbol">p_muls_int8</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">111</td></tr>
+<tr class="newsymbol"><td class="symbol">p_muls_uint16</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">105</td></tr>
+<tr class="newsymbol"><td class="symbol">p_muls_uint32</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">107</td></tr>
+<tr class="newsymbol"><td class="symbol">p_muls_uint64</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">115</td></tr>
+<tr class="newsymbol"><td class="symbol">p_muls_uint8</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">103</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_popcount.c">src/math/p_popcount.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">A.4410</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">16</td></tr>
+<tr class="newsymbol"><td class="symbol">A.4423</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">32</td></tr>
+<tr class="newsymbol"><td class="symbol">p_popcount_u32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">161</td></tr>
+<tr class="newsymbol"><td class="symbol">p_popcount_u64</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">218</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_pow.c">src/math/p_pow.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_pow_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">148</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_rand.c">src/math/p_rand.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_rand</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">16</td></tr>
+<tr class="newsymbol"><td class="symbol">p_srand</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">28</td></tr>
+<tr class="newsymbol"><td class="symbol">tinymt32_generate_uint32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">38</td></tr>
+<tr class="newsymbol"><td class="symbol">tinymt32_next_state</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">198</td></tr>
+<tr class="newsymbol"><td class="symbol">tinymt32_temper</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">72</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_sin.c">src/math/p_sin.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_sin_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">483</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_sincos.c">src/math/p_sincos.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_sincos_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">69</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_sinh.c">src/math/p_sinh.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_sinh_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">114</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_sort.c">src/math/p_sort.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_heapsort_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">254</td></tr>
+<tr class="newsymbol"><td class="symbol">_heapsort_u32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">254</td></tr>
+<tr class="newsymbol"><td class="symbol">_sift_down_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">294</td></tr>
+<tr class="newsymbol"><td class="symbol">_sift_down_u32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">284</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sort_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">43</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sort_u32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">43</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_sqrt.c">src/math/p_sqrt.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_sqrt_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">306</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_stddev.c">src/math/p_stddev.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_stddev_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">468</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_sub.c">src/math/p_sub.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_sub_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">120</td></tr>
+<tr><td class="symbol"></td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number increase">139</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sub_int16</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">125</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sub_int32</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">125</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sub_int64</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">134</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sub_int8</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">114</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sub_uint16</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">119</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sub_uint32</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">125</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sub_uint64</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">134</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sub_uint8</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">106</td></tr>
+<tr class="newsymbol"><td class="symbol">p_subs_f32</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">121</td></tr>
+<tr class="newsymbol"><td class="symbol">p_subs_int16</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">113</td></tr>
+<tr class="newsymbol"><td class="symbol">p_subs_int32</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">107</td></tr>
+<tr class="newsymbol"><td class="symbol">p_subs_int64</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">116</td></tr>
+<tr class="newsymbol"><td class="symbol">p_subs_int8</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">105</td></tr>
+<tr class="newsymbol"><td class="symbol">p_subs_uint16</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">105</td></tr>
+<tr class="newsymbol"><td class="symbol">p_subs_uint32</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">107</td></tr>
+<tr class="newsymbol"><td class="symbol">p_subs_uint64</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">116</td></tr>
+<tr class="newsymbol"><td class="symbol">p_subs_uint8</td><td>2015-06-17 00:29:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b81ca3d1748e83f82b01cd4c4f4afbd14daa8b30">b81ca3d1748e: Vector-vector and vector-scalar basic math oper...</a></td><td class="number">97</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_sum.c">src/math/p_sum.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_sum_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">94</td></tr>
+<tr><td class="symbol"></td><td>2015-06-16 23:55:45</td><td class="commit"><a href="https://github.com/parallella/pal/commit/28a3570424e3317896cf6cb70685f3fc3f6595a5">28a3570424e3: Wrote the sum and sum square functions as a tem...</a></td><td class="number decrease">85</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sum_int16</td><td>2015-06-16 23:55:45</td><td class="commit"><a href="https://github.com/parallella/pal/commit/28a3570424e3317896cf6cb70685f3fc3f6595a5">28a3570424e3: Wrote the sum and sum square functions as a tem...</a></td><td class="number">82</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sum_int32</td><td>2015-06-16 23:55:45</td><td class="commit"><a href="https://github.com/parallella/pal/commit/28a3570424e3317896cf6cb70685f3fc3f6595a5">28a3570424e3: Wrote the sum and sum square functions as a tem...</a></td><td class="number">77</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sum_int64</td><td>2015-06-16 23:55:45</td><td class="commit"><a href="https://github.com/parallella/pal/commit/28a3570424e3317896cf6cb70685f3fc3f6595a5">28a3570424e3: Wrote the sum and sum square functions as a tem...</a></td><td class="number">83</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sum_int8</td><td>2015-06-16 23:55:45</td><td class="commit"><a href="https://github.com/parallella/pal/commit/28a3570424e3317896cf6cb70685f3fc3f6595a5">28a3570424e3: Wrote the sum and sum square functions as a tem...</a></td><td class="number">77</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sum_uint16</td><td>2015-06-16 23:55:45</td><td class="commit"><a href="https://github.com/parallella/pal/commit/28a3570424e3317896cf6cb70685f3fc3f6595a5">28a3570424e3: Wrote the sum and sum square functions as a tem...</a></td><td class="number">78</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sum_uint32</td><td>2015-06-16 23:55:45</td><td class="commit"><a href="https://github.com/parallella/pal/commit/28a3570424e3317896cf6cb70685f3fc3f6595a5">28a3570424e3: Wrote the sum and sum square functions as a tem...</a></td><td class="number">77</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sum_uint64</td><td>2015-06-16 23:55:45</td><td class="commit"><a href="https://github.com/parallella/pal/commit/28a3570424e3317896cf6cb70685f3fc3f6595a5">28a3570424e3: Wrote the sum and sum square functions as a tem...</a></td><td class="number">83</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sum_uint8</td><td>2015-06-16 23:55:45</td><td class="commit"><a href="https://github.com/parallella/pal/commit/28a3570424e3317896cf6cb70685f3fc3f6595a5">28a3570424e3: Wrote the sum and sum square functions as a tem...</a></td><td class="number">73</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_sumsq.c">src/math/p_sumsq.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_sumsq_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">122</td></tr>
+<tr><td class="symbol"></td><td>2015-06-16 23:55:45</td><td class="commit"><a href="https://github.com/parallella/pal/commit/28a3570424e3317896cf6cb70685f3fc3f6595a5">28a3570424e3: Wrote the sum and sum square functions as a tem...</a></td><td class="number increase">129</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sumsq_int16</td><td>2015-06-16 23:55:45</td><td class="commit"><a href="https://github.com/parallella/pal/commit/28a3570424e3317896cf6cb70685f3fc3f6595a5">28a3570424e3: Wrote the sum and sum square functions as a tem...</a></td><td class="number">120</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sumsq_int32</td><td>2015-06-16 23:55:45</td><td class="commit"><a href="https://github.com/parallella/pal/commit/28a3570424e3317896cf6cb70685f3fc3f6595a5">28a3570424e3: Wrote the sum and sum square functions as a tem...</a></td><td class="number">111</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sumsq_int64</td><td>2015-06-16 23:55:45</td><td class="commit"><a href="https://github.com/parallella/pal/commit/28a3570424e3317896cf6cb70685f3fc3f6595a5">28a3570424e3: Wrote the sum and sum square functions as a tem...</a></td><td class="number">121</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sumsq_int8</td><td>2015-06-16 23:55:45</td><td class="commit"><a href="https://github.com/parallella/pal/commit/28a3570424e3317896cf6cb70685f3fc3f6595a5">28a3570424e3: Wrote the sum and sum square functions as a tem...</a></td><td class="number">114</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sumsq_uint16</td><td>2015-06-16 23:55:45</td><td class="commit"><a href="https://github.com/parallella/pal/commit/28a3570424e3317896cf6cb70685f3fc3f6595a5">28a3570424e3: Wrote the sum and sum square functions as a tem...</a></td><td class="number">110</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sumsq_uint32</td><td>2015-06-16 23:55:45</td><td class="commit"><a href="https://github.com/parallella/pal/commit/28a3570424e3317896cf6cb70685f3fc3f6595a5">28a3570424e3: Wrote the sum and sum square functions as a tem...</a></td><td class="number">111</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sumsq_uint64</td><td>2015-06-16 23:55:45</td><td class="commit"><a href="https://github.com/parallella/pal/commit/28a3570424e3317896cf6cb70685f3fc3f6595a5">28a3570424e3: Wrote the sum and sum square functions as a tem...</a></td><td class="number">121</td></tr>
+<tr class="newsymbol"><td class="symbol">p_sumsq_uint8</td><td>2015-06-16 23:55:45</td><td class="commit"><a href="https://github.com/parallella/pal/commit/28a3570424e3317896cf6cb70685f3fc3f6595a5">28a3570424e3: Wrote the sum and sum square functions as a tem...</a></td><td class="number">106</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_tan.c">src/math/p_tan.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_tan_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">114</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_tanh.c">src/math/p_tanh.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_tanh_f32</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">114</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/tinymt/tinymt32.c">src/math/tinymt/tinymt32.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">ini_func1</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">24</td></tr>
+<tr class="newsymbol"><td class="symbol">ini_func2</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">24</td></tr>
+<tr class="newsymbol"><td class="symbol">period_certification</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">101</td></tr>
+<tr class="newsymbol"><td class="symbol">tinymt32_init</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">226</td></tr>
+<tr class="newsymbol"><td class="symbol">tinymt32_init_by_array</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">1373</td></tr>
+<tr class="newsymbol"><td class="symbol">tinymt32_next_state</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">198</td></tr>
+</table>
+</body>
+</html>
