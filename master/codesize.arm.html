@@ -42,7 +42,7 @@ td, th {
 </head>
 <body>
 <h1>PAL code size report for arm-linux-gnueabihf</h1>
-<p>Latest commit: 40c821a6a571f3d66ed36ca4436e5136a8355137</p>
+<p>Latest commit: 10b19c9d244d2640989853bb54ab32311c90ae8f</p>
 <h2><a href="https://github.com/parallella/pal/tree/master/src/base/boilerplate.c">src/base/boilerplate.c</a></h2>
 <table>
 <tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
@@ -439,7 +439,11 @@ td, th {
 <tr><td class="symbol"></td><td>2015-03-07 19:06:13</td><td class="commit"><a href="https://github.com/parallella/pal/commit/5a80a343ca5c63ee8b64e66aacd6c0ce22064ee9">5a80a343ca5c: Adding optimized FIR function -based on yaniv's...</a></td><td class="number increase">1770</td></tr>
 <tr><td class="symbol"></td><td>2015-06-16 22:57:28</td><td class="commit"><a href="https://github.com/parallella/pal/commit/066a3f94efa5412397f3e4f3ec202154cca8103f">066a3f94efa5: dsp: p_fir: Fix FIR filter implementation</a></td><td class="number decrease">1140</td></tr>
 <tr><td class="symbol"></td><td>2015-06-17 16:37:41</td><td class="commit"><a href="https://github.com/parallella/pal/commit/fbf762ae5d86edd18121b1589f042b129b8ee03e">fbf762ae5d86: Merge branch 'regression'</a></td><td class="number increase">1770</td></tr>
+<tr><td class="symbol"></td><td>2015-06-20 12:52:22</td><td class="commit"><a href="https://github.com/parallella/pal/commit/8bc773654ccfb9f28a6f5080c14492abf0b79dfe">8bc773654ccf: Merge pull request #167 from ebadi/master</a></td><td class="number decrease">1140</td></tr>
+<tr><td class="symbol"></td><td>2015-06-22 21:15:21</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b1df2597cbccf5ed429da109477a8b0fef1fe179">b1df2597cbcc: initial rgb2greyscale</a></td><td class="number increase">1770</td></tr>
 <tr><td class="symbol"></td><td>2015-06-22 21:18:12</td><td class="commit"><a href="https://github.com/parallella/pal/commit/40c821a6a571f3d66ed36ca4436e5136a8355137">40c821a6a571: Merge branch 'master' of https://github.com/par...</a></td><td class="number decrease">1140</td></tr>
+<tr><td class="symbol"></td><td>2015-06-22 21:28:52</td><td class="commit"><a href="https://github.com/parallella/pal/commit/d2d04cf60bddec8e33cacb3c4976d7987d236c29">d2d04cf60bdd: fixed Makefile generation for test/images</a></td><td class="number increase">1770</td></tr>
+<tr><td class="symbol"></td><td>2015-06-23 00:49:47</td><td class="commit"><a href="https://github.com/parallella/pal/commit/ef0d5ead4035e85fc4c50df3a89d02ac797dfe3f">ef0d5ead4035: Merge pull request #171 from hiovidiu/master</a></td><td class="number decrease">1140</td></tr>
 </table>
 <h2><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_firdec.c">src/dsp/p_firdec.c</a></h2>
 <table>
@@ -504,6 +508,11 @@ td, th {
 <tr><td class="symbol"></td><td>2015-03-01 14:32:33</td><td class="commit"><a href="https://github.com/parallella/pal/commit/312d4a88574be2b865a494f6be3945f49cf8522e">312d4a88574b: Merge pull request #17 from mateunho/gauss</a></td><td class="number increase">392</td></tr>
 <tr><td class="symbol"></td><td>2015-06-05 18:09:19</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b631659fedf30328722b6f760aea8f675f77c57e">b631659fedf3: Merge pull request #81 from anael-seghezzi/master</a></td><td class="number decrease">364</td></tr>
 </table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_grayscale.c">src/image/p_grayscale.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">p_rgb2grayscale_f32</td><td>2015-06-22 21:15:21</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b1df2597cbccf5ed429da109477a8b0fef1fe179">b1df2597cbcc: initial rgb2greyscale</a></td><td class="number">188</td></tr>
+</table>
 <h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_harris3x3.c">src/image/p_harris3x3.c</a></h2>
 <table>
 <tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
@@ -541,14 +550,22 @@ td, th {
 <tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
 <tr><td class="symbol">p_sad16x16_32f</td><td>2015-02-27 12:58:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/500c42820021724c034f01c6bbb6949a65857a94">500c42820021: build: Add dsp fft and image directories</a></td><td class="number">24</td></tr>
 <tr class="newsymbol"><td class="symbol">p_sad16x16_f32</td><td>2015-02-28 22:51:12</td><td class="commit"><a href="https://github.com/parallella/pal/commit/33fd816c0b068dc47be8f002d006de81a730807a">33fd816c0b06: Fix more inconsistencies between header/impleme...</a></td><td class="number">24</td></tr>
+<tr><td class="symbol"></td><td>2015-06-20 12:52:22</td><td class="commit"><a href="https://github.com/parallella/pal/commit/8bc773654ccfb9f28a6f5080c14492abf0b79dfe">8bc773654ccf: Merge pull request #167 from ebadi/master</a></td><td class="number increase">208</td></tr>
+<tr><td class="symbol"></td><td>2015-06-22 21:15:21</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b1df2597cbccf5ed429da109477a8b0fef1fe179">b1df2597cbcc: initial rgb2greyscale</a></td><td class="number decrease">24</td></tr>
 <tr><td class="symbol"></td><td>2015-06-22 21:18:12</td><td class="commit"><a href="https://github.com/parallella/pal/commit/40c821a6a571f3d66ed36ca4436e5136a8355137">40c821a6a571: Merge branch 'master' of https://github.com/par...</a></td><td class="number increase">220</td></tr>
+<tr><td class="symbol"></td><td>2015-06-22 21:28:52</td><td class="commit"><a href="https://github.com/parallella/pal/commit/d2d04cf60bddec8e33cacb3c4976d7987d236c29">d2d04cf60bdd: fixed Makefile generation for test/images</a></td><td class="number decrease">24</td></tr>
+<tr><td class="symbol"></td><td>2015-06-23 00:49:47</td><td class="commit"><a href="https://github.com/parallella/pal/commit/ef0d5ead4035e85fc4c50df3a89d02ac797dfe3f">ef0d5ead4035: Merge pull request #171 from hiovidiu/master</a></td><td class="number increase">220</td></tr>
 </table>
 <h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_sad8x8.c">src/image/p_sad8x8.c</a></h2>
 <table>
 <tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
 <tr><td class="symbol">p_sad8x8_32f</td><td>2015-02-27 12:58:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/500c42820021724c034f01c6bbb6949a65857a94">500c42820021: build: Add dsp fft and image directories</a></td><td class="number">24</td></tr>
 <tr class="newsymbol"><td class="symbol">p_sad8x8_f32</td><td>2015-02-28 22:51:12</td><td class="commit"><a href="https://github.com/parallella/pal/commit/33fd816c0b068dc47be8f002d006de81a730807a">33fd816c0b06: Fix more inconsistencies between header/impleme...</a></td><td class="number">24</td></tr>
+<tr><td class="symbol"></td><td>2015-06-20 12:52:22</td><td class="commit"><a href="https://github.com/parallella/pal/commit/8bc773654ccfb9f28a6f5080c14492abf0b79dfe">8bc773654ccf: Merge pull request #167 from ebadi/master</a></td><td class="number increase">204</td></tr>
+<tr><td class="symbol"></td><td>2015-06-22 21:15:21</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b1df2597cbccf5ed429da109477a8b0fef1fe179">b1df2597cbcc: initial rgb2greyscale</a></td><td class="number decrease">24</td></tr>
 <tr><td class="symbol"></td><td>2015-06-22 21:18:12</td><td class="commit"><a href="https://github.com/parallella/pal/commit/40c821a6a571f3d66ed36ca4436e5136a8355137">40c821a6a571: Merge branch 'master' of https://github.com/par...</a></td><td class="number increase">216</td></tr>
+<tr><td class="symbol"></td><td>2015-06-22 21:28:52</td><td class="commit"><a href="https://github.com/parallella/pal/commit/d2d04cf60bddec8e33cacb3c4976d7987d236c29">d2d04cf60bdd: fixed Makefile generation for test/images</a></td><td class="number decrease">24</td></tr>
+<tr><td class="symbol"></td><td>2015-06-23 00:49:47</td><td class="commit"><a href="https://github.com/parallella/pal/commit/ef0d5ead4035e85fc4c50df3a89d02ac797dfe3f">ef0d5ead4035: Merge pull request #171 from hiovidiu/master</a></td><td class="number increase">216</td></tr>
 </table>
 <h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_scharr3x3.c">src/image/p_scharr3x3.c</a></h2>
 <table>
@@ -837,10 +854,14 @@ td, th {
 <tr class="newsymbol"><td class="symbol">A.5896</td><td>2015-03-07 21:00:46</td><td class="commit"><a href="https://github.com/parallella/pal/commit/8f7cf552314d3302af3c3b1b5113b85ee6c0fc69">8f7cf552314d: Merge branch 'master' of https://github.com/aol...</a></td><td class="number">32</td></tr>
 <tr class="newsymbol"><td class="symbol">A.6802</td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number">16</td></tr>
 <tr class="newsymbol"><td class="symbol">A.6803</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">16</td></tr>
-<tr class="newsymbol"><td class="symbol">A.6805</td><td>2015-06-22 21:18:12</td><td class="commit"><a href="https://github.com/parallella/pal/commit/40c821a6a571f3d66ed36ca4436e5136a8355137">40c821a6a571: Merge branch 'master' of https://github.com/par...</a></td><td class="number">16</td></tr>
+<tr class="newsymbol"><td class="symbol">A.6805</td><td>2015-06-20 12:52:22</td><td class="commit"><a href="https://github.com/parallella/pal/commit/8bc773654ccfb9f28a6f5080c14492abf0b79dfe">8bc773654ccf: Merge pull request #167 from ebadi/master</a></td><td class="number">16</td></tr>
+<tr class="newsymbol"><td class="symbol">A.6808</td><td>2015-06-22 21:15:21</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b1df2597cbccf5ed429da109477a8b0fef1fe179">b1df2597cbcc: initial rgb2greyscale</a></td><td class="number">16</td></tr>
+<tr class="newsymbol"><td class="symbol">A.6810</td><td>2015-06-23 00:49:47</td><td class="commit"><a href="https://github.com/parallella/pal/commit/ef0d5ead4035e85fc4c50df3a89d02ac797dfe3f">ef0d5ead4035: Merge pull request #171 from hiovidiu/master</a></td><td class="number">16</td></tr>
 <tr class="newsymbol"><td class="symbol">A.6815</td><td>2015-06-12 04:11:14</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f9155665315e9f41230381eec9360eaa3724c09d">f9155665315e: Merge pull request #129 from olajep/remove-team...</a></td><td class="number">32</td></tr>
 <tr class="newsymbol"><td class="symbol">A.6816</td><td>2015-06-16 13:17:08</td><td class="commit"><a href="https://github.com/parallella/pal/commit/07c90781d11d0e38fcd027bb5ac0a95720b1e177">07c90781d11d: Merge pull request #148 from ebadi/master</a></td><td class="number">32</td></tr>
-<tr class="newsymbol"><td class="symbol">A.6818</td><td>2015-06-22 21:18:12</td><td class="commit"><a href="https://github.com/parallella/pal/commit/40c821a6a571f3d66ed36ca4436e5136a8355137">40c821a6a571: Merge branch 'master' of https://github.com/par...</a></td><td class="number">32</td></tr>
+<tr class="newsymbol"><td class="symbol">A.6818</td><td>2015-06-20 12:52:22</td><td class="commit"><a href="https://github.com/parallella/pal/commit/8bc773654ccfb9f28a6f5080c14492abf0b79dfe">8bc773654ccf: Merge pull request #167 from ebadi/master</a></td><td class="number">32</td></tr>
+<tr class="newsymbol"><td class="symbol">A.6821</td><td>2015-06-22 21:15:21</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b1df2597cbccf5ed429da109477a8b0fef1fe179">b1df2597cbcc: initial rgb2greyscale</a></td><td class="number">32</td></tr>
+<tr class="newsymbol"><td class="symbol">A.6823</td><td>2015-06-23 00:49:47</td><td class="commit"><a href="https://github.com/parallella/pal/commit/ef0d5ead4035e85fc4c50df3a89d02ac797dfe3f">ef0d5ead4035: Merge pull request #171 from hiovidiu/master</a></td><td class="number">32</td></tr>
 <tr class="newsymbol"><td class="symbol">A.6918</td><td>2015-06-04 06:11:46</td><td class="commit"><a href="https://github.com/parallella/pal/commit/f17972a19ecbb3e3824640844ca4bfc7cf868802">f17972a19ecb: Fixing 'sad' interface, old one made no sense</a></td><td class="number">16</td></tr>
 <tr class="newsymbol"><td class="symbol">A.6920</td><td>2015-04-27 14:47:34</td><td class="commit"><a href="https://github.com/parallella/pal/commit/ea107e5c917cd29d9d3204d6f9fcace342eeb925">ea107e5c917c: Fix compiler warnings</a></td><td class="number">16</td></tr>
 <tr class="newsymbol"><td class="symbol">A.6926</td><td>2015-06-05 02:24:12</td><td class="commit"><a href="https://github.com/parallella/pal/commit/eae3dfc883869626ecbb44df1ae67f9c9b9c74b8">eae3dfc88386: Merge pull request #77 from anael-seghezzi/image</a></td><td class="number">16</td></tr>
