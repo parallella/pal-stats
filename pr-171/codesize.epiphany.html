@@ -1,0 +1,597 @@
+<html>
+<head>
+<title>PAL code size report for epiphany-elf</title>
+<style>
+.increase {
+    background-color: red;
+}
+.decrease {
+    background-color: green;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #222;
+}
+th {
+    border-bottom: 1px solid #222;
+}
+tr.newsymbol {
+    border-top: 1px solid #222;
+}
+td, th {
+    border-left: 1px solid #222;
+    border-right: 1px solid #222;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.commit, .commit a, .symbol {
+    font-family: "Courier New", Courier, monospace;
+}
+.commit, .commit a {
+    min-width: 64ch;
+}
+.symbol {
+    min-width: 24ch;
+}
+.number {
+    text-align: right;
+    min-width: 6ch;
+}
+</style>
+</head>
+<body>
+<h1>PAL code size report for epiphany-elf</h1>
+<p>Latest commit: 3959110e9df76cf59125865ae592038222948600</p>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/boilerplate.c">src/base/boilerplate.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">___pal_fini</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">330</td></tr>
+<tr class="newsymbol"><td class="symbol">___pal_global</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">104</td></tr>
+<tr class="newsymbol"><td class="symbol">___pal_init</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">330</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_append.c">src/base/p_append.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_append</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">68</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_add.c">src/base/p_atomic_add.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_atomic_add_u32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">30</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_and.c">src/base/p_atomic_and.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_atomic_and_u32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">30</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_compswap.c">src/base/p_atomic_compswap.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_atomic_compswap_u32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">34</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_or.c">src/base/p_atomic_or.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_atomic_or_u32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">30</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_sub.c">src/base/p_atomic_sub.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_atomic_sub_u32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">30</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_swap.c">src/base/p_atomic_swap.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_atomic_swap_u32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">30</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_xor.c">src/base/p_atomic_xor.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_atomic_xor_u32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">30</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_barrier.c">src/base/p_barrier.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_barrier</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">56</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_close.c">src/base/p_close.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_close</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">84</td></tr>
+<tr class="newsymbol"><td class="symbol">_p_ref_is_err</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">48</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_fence.c">src/base/p_fence.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_fence</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">56</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_finalize.c">src/base/p_finalize.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_finalize</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">106</td></tr>
+<tr class="newsymbol"><td class="symbol">_p_ref_is_err</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">48</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_free.c">src/base/p_free.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_free</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">56</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_gather.c">src/base/p_gather.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_gather</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">38</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_get_err.c">src/base/p_get_err.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_get_err</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">46</td></tr>
+<tr class="newsymbol"><td class="symbol">_p_ref_get_err</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">58</td></tr>
+<tr class="newsymbol"><td class="symbol">_p_ref_is_err</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">48</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_getaddr.c">src/base/p_getaddr.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_getaddr</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">26</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_getsymbol.c">src/base/p_getsymbol.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_getsymbol</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">34</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_init.c">src/base/p_init.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_init</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">136</td></tr>
+<tr class="newsymbol"><td class="symbol">_p_ref_err</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">32</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_load.c">src/base/p_load.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_load</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">242</td></tr>
+<tr class="newsymbol"><td class="symbol">_p_ref_err</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">32</td></tr>
+<tr class="newsymbol"><td class="symbol">_p_ref_is_err</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">48</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_malloc.c">src/base/p_malloc.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_malloc</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">74</td></tr>
+<tr class="newsymbol"><td class="symbol">_p_ref_err</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">32</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_memcpy.c">src/base/p_memcpy.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_memcpy</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">38</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_mutex_destroy.c">src/base/p_mutex_destroy.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_mutex_destroy</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">26</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_mutex_init.c">src/base/p_mutex_init.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_mutex_init</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">26</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_mutex_lock.c">src/base/p_mutex_lock.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_mutex_lock</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">26</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_mutex_trylock.c">src/base/p_mutex_trylock.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_mutex_trylock</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">26</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_mutex_unlock.c">src/base/p_mutex_unlock.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_mutex_unlock</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">26</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_open.c">src/base/p_open.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_open</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">270</td></tr>
+<tr class="newsymbol"><td class="symbol">_p_ref_err</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">32</td></tr>
+<tr class="newsymbol"><td class="symbol">_p_ref_is_err</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">48</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_query.c">src/base/p_query.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_query</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">90</td></tr>
+<tr class="newsymbol"><td class="symbol">_p_ref_is_err</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">48</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_read.c">src/base/p_read.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_read</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">92</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_remove.c">src/base/p_remove.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_remove</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">34</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_rmalloc.c">src/base/p_rmalloc.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_ref_err</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">32</td></tr>
+<tr class="newsymbol"><td class="symbol">_p_rmalloc</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">78</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_run.c">src/base/p_run.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_ref_is_err</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">48</td></tr>
+<tr class="newsymbol"><td class="symbol">_p_run</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">226</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_wait.c">src/base/p_wait.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_ref_is_err</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">48</td></tr>
+<tr class="newsymbol"><td class="symbol">_p_wait</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">108</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/base/p_write.c">src/base/p_write.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_write</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">92</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_acorr.c">src/dsp/p_acorr.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_acorr_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">310</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_conv.c">src/dsp/p_conv.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_conv_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">366</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_fir.c">src/dsp/p_fir.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_fir_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">1770</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_firdec.c">src/dsp/p_firdec.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_firdec_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">36</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_firint.c">src/dsp/p_firint.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_firint_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">36</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_firsym.c">src/dsp/p_firsym.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_firsym_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">36</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_iir.c">src/dsp/p_iir.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_coeffs</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">64</td></tr>
+<tr class="newsymbol"><td class="symbol">_p_iir_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">2248</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_xcorr.c">src/dsp/p_xcorr.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_xcorr_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">978</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/fft/p_cfft.c">src/fft/p_cfft.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_cfft</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">36</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_box3x3.c">src/image/p_box3x3.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_box3x3_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">604</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_conv2d.c">src/image/p_conv2d.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_conv2d_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">598</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_gauss3x3.c">src/image/p_gauss3x3.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_gauss3x3_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">544</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_grayscale.c">src/image/p_grayscale.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_rgb2grayscale_f32</td><td>2015-06-22 21:15:21</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b1df2597cbccf5ed429da109477a8b0fef1fe179">b1df2597cbcc: initial rgb2greyscale</a></td><td class="number">402</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_harris3x3.c">src/image/p_harris3x3.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">__sst3x3</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">656</td></tr>
+<tr class="newsymbol"><td class="symbol">_p_harris3x3_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">1118</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_laplace3x3.c">src/image/p_laplace3x3.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_laplace3x3_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">556</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_median3x3.c">src/image/p_median3x3.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_opt_med9</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">892</td></tr>
+<tr class="newsymbol"><td class="symbol">_p_median3x3_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">616</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_prewitt3x3.c">src/image/p_prewitt3x3.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_prewitt3x3_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">822</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_sad16x16.c">src/image/p_sad16x16.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_sad16x16_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">36</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_sad8x8.c">src/image/p_sad8x8.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_sad8x8_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">36</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_scharr3x3.c">src/image/p_scharr3x3.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_scharr3x3_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">738</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/image/p_sobel3x3.c">src/image/p_sobel3x3.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_sobel3x3_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">2226</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_a_inv.c">src/math/p_a_inv.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_a_inv_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">678</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_abs.c">src/math/p_abs.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_abs_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">116</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_absdiff.c">src/math/p_absdiff.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_absdiff_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">244</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_acos.c">src/math/p_acos.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_acos_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">116</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_acosh.c">src/math/p_acosh.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_acosh_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">116</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_add.c">src/math/p_add.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_add_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">222</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_asin.c">src/math/p_asin.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_asin_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">116</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_asinh.c">src/math/p_asinh.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_asinh_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">116</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_atan.c">src/math/p_atan.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_atan_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">136</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_atan2.c">src/math/p_atan2.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_atan2_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">134</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_atanh.c">src/math/p_atanh.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_atanh_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">116</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_cbrt.c">src/math/p_cbrt.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_cbrt_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">116</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_cos.c">src/math/p_cos.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_cos_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">1124</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_cosh.c">src/math/p_cosh.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_cosh_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">116</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_div.c">src/math/p_div.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_div_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">134</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_dot.c">src/math/p_dot.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_dot_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">230</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_exp.c">src/math/p_exp.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_exp_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">116</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_ftoi.c">src/math/p_ftoi.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_ftoi</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">318</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_inv.c">src/math/p_inv.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_inv_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">330</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_invcbrt.c">src/math/p_invcbrt.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_invcbrt_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">356</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_invsqrt.c">src/math/p_invsqrt.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_invsqrt_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">368</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_itof.c">src/math/p_itof.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_itof</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">198</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_ln.c">src/math/p_ln.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_ln_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">416</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_log10.c">src/math/p_log10.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_log10_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">254</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_mac.c">src/math/p_mac.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_mac_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">242</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_max.c">src/math/p_max.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_max_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">310</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_mean.c">src/math/p_mean.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_mean_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">304</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_median.c">src/math/p_median.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_median_partition</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">246</td></tr>
+<tr class="newsymbol"><td class="symbol">_p_median_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">578</td></tr>
+<tr class="newsymbol"><td class="symbol">_swap</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">60</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_min.c">src/math/p_min.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_min_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">166</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_mode.c">src/math/p_mode.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_mode_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">316</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_mul.c">src/math/p_mul.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_mul_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">222</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_popcount.c">src/math/p_popcount.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_A.3145</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">16</td></tr>
+<tr class="newsymbol"><td class="symbol">_A.3150</td><td>2015-06-22 21:15:21</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b1df2597cbccf5ed429da109477a8b0fef1fe179">b1df2597cbcc: initial rgb2greyscale</a></td><td class="number">16</td></tr>
+<tr class="newsymbol"><td class="symbol">_A.3158</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">32</td></tr>
+<tr class="newsymbol"><td class="symbol">_A.3163</td><td>2015-06-22 21:15:21</td><td class="commit"><a href="https://github.com/parallella/pal/commit/b1df2597cbccf5ed429da109477a8b0fef1fe179">b1df2597cbcc: initial rgb2greyscale</a></td><td class="number">32</td></tr>
+<tr class="newsymbol"><td class="symbol">_p_popcount_u32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">318</td></tr>
+<tr class="newsymbol"><td class="symbol">_p_popcount_u64</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">512</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_pow.c">src/math/p_pow.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_pow_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">134</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_rand.c">src/math/p_rand.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_rand</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">46</td></tr>
+<tr class="newsymbol"><td class="symbol">_p_srand</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">54</td></tr>
+<tr class="newsymbol"><td class="symbol">_tinymt32_generate_uint32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">60</td></tr>
+<tr class="newsymbol"><td class="symbol">_tinymt32_next_state</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">232</td></tr>
+<tr class="newsymbol"><td class="symbol">_tinymt32_temper</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">104</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_sin.c">src/math/p_sin.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_sin_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">540</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_sincos.c">src/math/p_sincos.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_sincos_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">88</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_sinh.c">src/math/p_sinh.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_sinh_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">116</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_sort.c">src/math/p_sort.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">__heapsort_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">278</td></tr>
+<tr class="newsymbol"><td class="symbol">__heapsort_u32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">278</td></tr>
+<tr class="newsymbol"><td class="symbol">__sift_down_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">288</td></tr>
+<tr class="newsymbol"><td class="symbol">__sift_down_u32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">264</td></tr>
+<tr class="newsymbol"><td class="symbol">_p_sort_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">62</td></tr>
+<tr class="newsymbol"><td class="symbol">_p_sort_u32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">62</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_sqrt.c">src/math/p_sqrt.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_sqrt_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">386</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_stddev.c">src/math/p_stddev.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_stddev_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">814</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_sub.c">src/math/p_sub.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_sub_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">222</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_sum.c">src/math/p_sum.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_sum_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">206</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_sumsq.c">src/math/p_sumsq.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_sumsq_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">222</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_tan.c">src/math/p_tan.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_tan_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">116</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/p_tanh.c">src/math/p_tanh.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_p_tanh_f32</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">116</td></tr>
+</table>
+<h2><a href="https://github.com/parallella/pal/tree/master/src/math/tinymt/tinymt32.c">src/math/tinymt/tinymt32.c</a></h2>
+<table>
+<tr><th>Symbol</th><th>Date (GMT+0)</th><th>Commit</th><th>Size</th></tr>
+<tr><td class="symbol">_ini_func1</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">160</td></tr>
+<tr class="newsymbol"><td class="symbol">_ini_func2</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">160</td></tr>
+<tr class="newsymbol"><td class="symbol">_period_certification</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">106</td></tr>
+<tr class="newsymbol"><td class="symbol">_tinymt32_init</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">408</td></tr>
+<tr class="newsymbol"><td class="symbol">_tinymt32_init_by_array</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">2318</td></tr>
+<tr class="newsymbol"><td class="symbol">_tinymt32_next_state</td><td>2015-06-18 17:19:26</td><td class="commit"><a href="https://github.com/parallella/pal/commit/bb75235562113e8c0530b9063d2085ebe7f9f18d">bb7523556211: tools:regression: Add PAL_TOOLS global env var</a></td><td class="number">232</td></tr>
+</table>
+</body>
+</html>
