@@ -16,6 +16,7 @@ table {
 }
 th {
     border-bottom: 1px solid #222;
+    width: 5em; /* hack? but it works */
 }
 tr.newsymbol {
     border-top: 1px solid #222;
@@ -32,6 +33,11 @@ th.side {
     background-color: #222;
     color: #eee;
 }
+
+th.cflags {
+    font-size: x-small;
+}
+
 
 .bottom {
     border: 1px solid #222;
@@ -63,626 +69,1242 @@ th.side {
 </head>
 <body>
 <h1>PAL code size summary</h1>
-<p>Latest commit: 5938391230719797e1736ace2ef6845cac95fdf6</p>
+<p>Latest commit: 132dcdc129a24afc93e5dfd57a117f245e7beec9</p>
 
 <table>
-<tr><th rowspan="2">&nbsp;</th><th>x86_64</th><th>ARM</th><th>Epiphany</th><th class="side"><div class="rotate">Platform</div></th></tr>
-<tr><th>(default)</th><th>(default)</th><th>(default)</th><th class="side"><div class="rotate">CFLAGS</div></th></tr>
-<tr><th>File</th><th colspan="3">Size</th><th class="side" rowspan="1000">&nbsp;</th></tr>
+<tr><th rowspan="2">&nbsp;</th><th colspan="3">x86_64</th><th colspan="3">ARM</th><th colspan="3">Epiphany</th><th class="side"><div class="rotate">Platform</div></th></tr>
+<tr>
+<th class="cflags">(default)</th><th class="cflags"><nobr>-Os</nobr> <nobr>-ffast-math</nobr></th><th class="cflags"><nobr>-O2</nobr> <nobr>-ffast-math</nobr></th>
+<th class="cflags">(default)</th><th class="cflags"><nobr>-Os</nobr> <nobr>-ffast-math</nobr></th><th class="cflags"><nobr>-O2</nobr> <nobr>-ffast-math</nobr></th>
+<th class="cflags">(default)</th><th class="cflags"><nobr>-Os</nobr> <nobr>-ffast-math</nobr> <nobr>-mfp-mode=round-nearest</nobr> <nobr>-ffp-contract=fast</nobr></th><th class="cflags"><nobr>-O2</nobr> <nobr>-ffast-math</nobr> <nobr>-mfp-mode=round-nearest</nobr> <nobr>-ffp-contract=fast</nobr></th>
+<th class="side"><div class="rotate">CFLAGS</div></th></tr>
+<tr><th>File</th><th colspan="9">Size</th><th class="side" rowspan="1000">&nbsp;</th></tr>
 
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/boilerplate.c">src/base/boilerplate.c</a></td>
 <td class="number">290</td>
+<td class="number">227</td>
+<td class="number">245</td>
 <td class="number">200</td>
+<td class="number">134</td>
+<td class="number">146</td>
 <td class="number">764</td>
+<td class="number">412</td>
+<td class="number">340</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_append.c">src/base/p_append.c</a></td>
 <td class="number">48</td>
+<td class="number">26</td>
+<td class="number">32</td>
 <td class="number">38</td>
+<td class="number">24</td>
+<td class="number">24</td>
 <td class="number">68</td>
+<td class="number">44</td>
+<td class="number">44</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_add.c">src/base/p_atomic_add.c</a></td>
 <td class="number">18</td>
+<td class="number">3</td>
+<td class="number">3</td>
 <td class="number">24</td>
+<td class="number">4</td>
+<td class="number">4</td>
 <td class="number">30</td>
+<td class="number">6</td>
+<td class="number">6</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_and.c">src/base/p_atomic_and.c</a></td>
 <td class="number">18</td>
+<td class="number">3</td>
+<td class="number">3</td>
 <td class="number">24</td>
+<td class="number">4</td>
+<td class="number">4</td>
 <td class="number">30</td>
+<td class="number">6</td>
+<td class="number">6</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_compswap.c">src/base/p_atomic_compswap.c</a></td>
 <td class="number">22</td>
+<td class="number">3</td>
+<td class="number">3</td>
 <td class="number">26</td>
+<td class="number">4</td>
+<td class="number">4</td>
 <td class="number">34</td>
+<td class="number">6</td>
+<td class="number">6</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_or.c">src/base/p_atomic_or.c</a></td>
 <td class="number">18</td>
+<td class="number">3</td>
+<td class="number">3</td>
 <td class="number">24</td>
+<td class="number">4</td>
+<td class="number">4</td>
 <td class="number">30</td>
+<td class="number">6</td>
+<td class="number">6</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_sub.c">src/base/p_atomic_sub.c</a></td>
 <td class="number">18</td>
+<td class="number">3</td>
+<td class="number">3</td>
 <td class="number">24</td>
+<td class="number">4</td>
+<td class="number">4</td>
 <td class="number">30</td>
+<td class="number">6</td>
+<td class="number">6</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_swap.c">src/base/p_atomic_swap.c</a></td>
 <td class="number">19</td>
+<td class="number">3</td>
+<td class="number">3</td>
 <td class="number">24</td>
+<td class="number">4</td>
+<td class="number">4</td>
 <td class="number">30</td>
+<td class="number">6</td>
+<td class="number">6</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_xor.c">src/base/p_atomic_xor.c</a></td>
 <td class="number">18</td>
+<td class="number">3</td>
+<td class="number">3</td>
 <td class="number">24</td>
+<td class="number">4</td>
+<td class="number">4</td>
 <td class="number">30</td>
+<td class="number">6</td>
+<td class="number">6</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_barrier.c">src/base/p_barrier.c</a></td>
 <td class="number">41</td>
+<td class="number">25</td>
+<td class="number">31</td>
 <td class="number">32</td>
+<td class="number">20</td>
+<td class="number">22</td>
 <td class="number">56</td>
+<td class="number">46</td>
+<td class="number">46</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_close.c">src/base/p_close.c</a></td>
 <td class="number">87</td>
+<td class="number">40</td>
+<td class="number">40</td>
 <td class="number">84</td>
+<td class="number">32</td>
+<td class="number">34</td>
 <td class="number">132</td>
+<td class="number">76</td>
+<td class="number">76</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_fence.c">src/base/p_fence.c</a></td>
 <td class="number">41</td>
+<td class="number">25</td>
+<td class="number">31</td>
 <td class="number">32</td>
+<td class="number">20</td>
+<td class="number">22</td>
 <td class="number">56</td>
+<td class="number">46</td>
+<td class="number">46</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_finalize.c">src/base/p_finalize.c</a></td>
 <td class="number">115</td>
+<td class="number">53</td>
+<td class="number">51</td>
 <td class="number">98</td>
+<td class="number">44</td>
+<td class="number">44</td>
 <td class="number">154</td>
+<td class="number">86</td>
+<td class="number">86</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_free.c">src/base/p_free.c</a></td>
 <td class="number">41</td>
+<td class="number">25</td>
+<td class="number">31</td>
 <td class="number">32</td>
+<td class="number">20</td>
+<td class="number">22</td>
 <td class="number">56</td>
+<td class="number">46</td>
+<td class="number">46</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_gather.c">src/base/p_gather.c</a></td>
 <td class="number">34</td>
+<td class="number">3</td>
+<td class="number">3</td>
 <td class="number">28</td>
+<td class="number">4</td>
+<td class="number">4</td>
 <td class="number">38</td>
+<td class="number">6</td>
+<td class="number">6</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_get_err.c">src/base/p_get_err.c</a></td>
 <td class="number">90</td>
+<td class="number">13</td>
+<td class="number">13</td>
 <td class="number">92</td>
+<td class="number">10</td>
+<td class="number">10</td>
 <td class="number">152</td>
+<td class="number">20</td>
+<td class="number">20</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_getaddr.c">src/base/p_getaddr.c</a></td>
 <td class="number">15</td>
+<td class="number">3</td>
+<td class="number">3</td>
 <td class="number">22</td>
+<td class="number">4</td>
+<td class="number">4</td>
 <td class="number">26</td>
+<td class="number">6</td>
+<td class="number">6</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_getsymbol.c">src/base/p_getsymbol.c</a></td>
 <td class="number">23</td>
+<td class="number">3</td>
+<td class="number">3</td>
 <td class="number">26</td>
+<td class="number">4</td>
+<td class="number">4</td>
 <td class="number">34</td>
+<td class="number">6</td>
+<td class="number">6</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_init.c">src/base/p_init.c</a></td>
 <td class="number">131</td>
+<td class="number">55</td>
+<td class="number">72</td>
 <td class="number">116</td>
+<td class="number">40</td>
+<td class="number">42</td>
 <td class="number">168</td>
+<td class="number">52</td>
+<td class="number">54</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_load.c">src/base/p_load.c</a></td>
 <td class="number">264</td>
+<td class="number">126</td>
+<td class="number">137</td>
 <td class="number">212</td>
+<td class="number">82</td>
+<td class="number">80</td>
 <td class="number">322</td>
+<td class="number">162</td>
+<td class="number">204</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_malloc.c">src/base/p_malloc.c</a></td>
 <td class="number">72</td>
+<td class="number">32</td>
+<td class="number">38</td>
 <td class="number">68</td>
+<td class="number">24</td>
+<td class="number">26</td>
 <td class="number">106</td>
+<td class="number">56</td>
+<td class="number">56</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_memcpy.c">src/base/p_memcpy.c</a></td>
 <td class="number">26</td>
+<td class="number">3</td>
+<td class="number">3</td>
 <td class="number">28</td>
+<td class="number">4</td>
+<td class="number">4</td>
 <td class="number">38</td>
+<td class="number">6</td>
+<td class="number">6</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_mutex_destroy.c">src/base/p_mutex_destroy.c</a></td>
 <td class="number">15</td>
+<td class="number">3</td>
+<td class="number">3</td>
 <td class="number">22</td>
+<td class="number">4</td>
+<td class="number">4</td>
 <td class="number">26</td>
+<td class="number">6</td>
+<td class="number">6</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_mutex_init.c">src/base/p_mutex_init.c</a></td>
 <td class="number">15</td>
+<td class="number">3</td>
+<td class="number">3</td>
 <td class="number">22</td>
+<td class="number">4</td>
+<td class="number">4</td>
 <td class="number">26</td>
+<td class="number">6</td>
+<td class="number">6</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_mutex_lock.c">src/base/p_mutex_lock.c</a></td>
 <td class="number">15</td>
+<td class="number">3</td>
+<td class="number">3</td>
 <td class="number">22</td>
+<td class="number">4</td>
+<td class="number">4</td>
 <td class="number">26</td>
+<td class="number">6</td>
+<td class="number">6</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_mutex_trylock.c">src/base/p_mutex_trylock.c</a></td>
 <td class="number">15</td>
+<td class="number">3</td>
+<td class="number">3</td>
 <td class="number">22</td>
+<td class="number">4</td>
+<td class="number">4</td>
 <td class="number">26</td>
+<td class="number">6</td>
+<td class="number">6</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_mutex_unlock.c">src/base/p_mutex_unlock.c</a></td>
 <td class="number">15</td>
+<td class="number">3</td>
+<td class="number">3</td>
 <td class="number">22</td>
+<td class="number">4</td>
+<td class="number">4</td>
 <td class="number">26</td>
+<td class="number">6</td>
+<td class="number">6</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_open.c">src/base/p_open.c</a></td>
 <td class="number">263</td>
+<td class="number">144</td>
+<td class="number">171</td>
 <td class="number">244</td>
+<td class="number">88</td>
+<td class="number">90</td>
 <td class="number">350</td>
+<td class="number">164</td>
+<td class="number">196</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_query.c">src/base/p_query.c</a></td>
 <td class="number">96</td>
+<td class="number">24</td>
+<td class="number">30</td>
 <td class="number">88</td>
+<td class="number">18</td>
+<td class="number">18</td>
 <td class="number">138</td>
+<td class="number">32</td>
+<td class="number">32</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_read.c">src/base/p_read.c</a></td>
 <td class="number">75</td>
+<td class="number">33</td>
+<td class="number">39</td>
 <td class="number">50</td>
+<td class="number">32</td>
+<td class="number">34</td>
 <td class="number">92</td>
+<td class="number">66</td>
+<td class="number">70</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_remove.c">src/base/p_remove.c</a></td>
 <td class="number">21</td>
+<td class="number">3</td>
+<td class="number">3</td>
 <td class="number">26</td>
+<td class="number">4</td>
+<td class="number">4</td>
 <td class="number">34</td>
+<td class="number">6</td>
+<td class="number">6</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_rmalloc.c">src/base/p_rmalloc.c</a></td>
 <td class="number">73</td>
+<td class="number">31</td>
+<td class="number">37</td>
 <td class="number">70</td>
+<td class="number">28</td>
+<td class="number">26</td>
 <td class="number">110</td>
+<td class="number">50</td>
+<td class="number">50</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_run.c">src/base/p_run.c</a></td>
 <td class="number">221</td>
+<td class="number">99</td>
+<td class="number">108</td>
 <td class="number">166</td>
+<td class="number">78</td>
+<td class="number">92</td>
 <td class="number">274</td>
+<td class="number">160</td>
+<td class="number">178</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_wait.c">src/base/p_wait.c</a></td>
 <td class="number">113</td>
+<td class="number">47</td>
+<td class="number">55</td>
 <td class="number">104</td>
+<td class="number">40</td>
+<td class="number">42</td>
 <td class="number">156</td>
+<td class="number">98</td>
+<td class="number">98</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_write.c">src/base/p_write.c</a></td>
 <td class="number">70</td>
+<td class="number">39</td>
+<td class="number">45</td>
 <td class="number">48</td>
+<td class="number">36</td>
+<td class="number">36</td>
 <td class="number">92</td>
+<td class="number">80</td>
+<td class="number">80</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_acorr.c">src/dsp/p_acorr.c</a></td>
 <td class="number">175</td>
+<td class="number">67</td>
+<td class="number">78</td>
 <td class="number">140</td>
+<td class="number">62</td>
+<td class="number">72</td>
 <td class="number">310</td>
+<td class="number">84</td>
+<td class="number">88</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_conv.c">src/dsp/p_conv.c</a></td>
 <td class="number">252</td>
+<td class="number">79</td>
+<td class="number">109</td>
 <td class="number">178</td>
+<td class="number">76</td>
+<td class="number">98</td>
 <td class="number">366</td>
+<td class="number">112</td>
+<td class="number">116</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_fir.c">src/dsp/p_fir.c</a></td>
 <td class="number">1992</td>
+<td class="number">718</td>
+<td class="number">901</td>
 <td class="number">1140</td>
+<td class="number">484</td>
+<td class="number">584</td>
 <td class="number">1764</td>
+<td class="number">586</td>
+<td class="number">700</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_firdec.c">src/dsp/p_firdec.c</a></td>
 <td class="number">29</td>
+<td class="number">1</td>
+<td class="number">2</td>
 <td class="number">24</td>
+<td class="number">2</td>
+<td class="number">2</td>
 <td class="number">36</td>
+<td class="number">4</td>
+<td class="number">4</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_firint.c">src/dsp/p_firint.c</a></td>
 <td class="number">29</td>
+<td class="number">1</td>
+<td class="number">2</td>
 <td class="number">24</td>
+<td class="number">2</td>
+<td class="number">2</td>
 <td class="number">36</td>
+<td class="number">4</td>
+<td class="number">4</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_firsym.c">src/dsp/p_firsym.c</a></td>
 <td class="number">25</td>
+<td class="number">1</td>
+<td class="number">2</td>
 <td class="number">24</td>
+<td class="number">2</td>
+<td class="number">2</td>
 <td class="number">36</td>
+<td class="number">4</td>
+<td class="number">4</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_iir.c">src/dsp/p_iir.c</a></td>
 <td class="number">2886</td>
+<td class="number">1437</td>
+<td class="number">1520</td>
 <td class="number">2286</td>
+<td class="number">724</td>
+<td class="number">772</td>
 <td class="number">2312</td>
+<td class="number">748</td>
+<td class="number">756</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_xcorr.c">src/dsp/p_xcorr.c</a></td>
 <td class="number">680</td>
+<td class="number">237</td>
+<td class="number">378</td>
 <td class="number">476</td>
+<td class="number">224</td>
+<td class="number">286</td>
 <td class="number">978</td>
+<td class="number">292</td>
+<td class="number">356</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/fft/p_cfft.c">src/fft/p_cfft.c</a></td>
 <td class="number">20</td>
+<td class="number">1</td>
+<td class="number">2</td>
 <td class="number">24</td>
+<td class="number">2</td>
+<td class="number">2</td>
 <td class="number">36</td>
+<td class="number">4</td>
+<td class="number">4</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/image/p_box3x3.c">src/image/p_box3x3.c</a></td>
 <td class="number">497</td>
+<td class="number">165</td>
+<td class="number">189</td>
 <td class="number">388</td>
+<td class="number">188</td>
+<td class="number">208</td>
 <td class="number">604</td>
+<td class="number">224</td>
+<td class="number">286</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/image/p_conv2d.c">src/image/p_conv2d.c</a></td>
 <td class="number">334</td>
+<td class="number">311</td>
+<td class="number">334</td>
 <td class="number">254</td>
+<td class="number">236</td>
+<td class="number">224</td>
 <td class="number">598</td>
+<td class="number">340</td>
+<td class="number">302</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/image/p_gauss3x3.c">src/image/p_gauss3x3.c</a></td>
 <td class="number">460</td>
+<td class="number">220</td>
+<td class="number">254</td>
 <td class="number">364</td>
+<td class="number">192</td>
+<td class="number">220</td>
 <td class="number">544</td>
+<td class="number">202</td>
+<td class="number">268</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/image/p_grayscale.c">src/image/p_grayscale.c</a></td>
 <td class="number">270</td>
+<td class="number">117</td>
+<td class="number">118</td>
 <td class="number">188</td>
+<td class="number">100</td>
+<td class="number">100</td>
 <td class="number">402</td>
+<td class="number">154</td>
+<td class="number">152</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/image/p_harris3x3.c">src/image/p_harris3x3.c</a></td>
 <td class="number">1733</td>
+<td class="number">727</td>
+<td class="number">807</td>
 <td class="number">1342</td>
+<td class="number">644</td>
+<td class="number">704</td>
 <td class="number">1774</td>
+<td class="number">632</td>
+<td class="number">804</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/image/p_laplace3x3.c">src/image/p_laplace3x3.c</a></td>
 <td class="number">393</td>
+<td class="number">145</td>
+<td class="number">165</td>
 <td class="number">312</td>
+<td class="number">136</td>
+<td class="number">174</td>
 <td class="number">556</td>
+<td class="number">196</td>
+<td class="number">260</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/image/p_median3x3.c">src/image/p_median3x3.c</a></td>
 <td class="number">1172</td>
+<td class="number">982</td>
+<td class="number">782</td>
 <td class="number">936</td>
+<td class="number">772</td>
+<td class="number">716</td>
 <td class="number">1508</td>
+<td class="number">862</td>
+<td class="number">800</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/image/p_prewitt3x3.c">src/image/p_prewitt3x3.c</a></td>
 <td class="number">591</td>
+<td class="number">210</td>
+<td class="number">248</td>
 <td class="number">484</td>
+<td class="number">204</td>
+<td class="number">236</td>
 <td class="number">822</td>
+<td class="number">304</td>
+<td class="number">352</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/image/p_sad16x16.c">src/image/p_sad16x16.c</a></td>
 <td class="number">290</td>
+<td class="number">182</td>
+<td class="number">225</td>
 <td class="number">220</td>
+<td class="number">160</td>
+<td class="number">148</td>
 <td class="number">486</td>
+<td class="number">164</td>
+<td class="number">150</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/image/p_sad8x8.c">src/image/p_sad8x8.c</a></td>
 <td class="number">290</td>
+<td class="number">182</td>
+<td class="number">242</td>
 <td class="number">216</td>
+<td class="number">160</td>
+<td class="number">168</td>
 <td class="number">486</td>
+<td class="number">164</td>
+<td class="number">150</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/image/p_scharr3x3.c">src/image/p_scharr3x3.c</a></td>
 <td class="number">883</td>
+<td class="number">531</td>
+<td class="number">570</td>
 <td class="number">552</td>
+<td class="number">340</td>
+<td class="number">368</td>
 <td class="number">738</td>
+<td class="number">300</td>
+<td class="number">298</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/image/p_sobel3x3.c">src/image/p_sobel3x3.c</a></td>
 <td class="number">4007</td>
+<td class="number">2110</td>
+<td class="number">2246</td>
 <td class="number">1908</td>
+<td class="number">1084</td>
+<td class="number">1190</td>
 <td class="number">2226</td>
+<td class="number">752</td>
+<td class="number">848</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_a_inv.c">src/math/p_a_inv.c</a></td>
 <td class="number">387</td>
+<td class="number">211</td>
+<td class="number">194</td>
 <td class="number">282</td>
+<td class="number">132</td>
+<td class="number">134</td>
 <td class="number">678</td>
+<td class="number">284</td>
+<td class="number">268</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_abs.c">src/math/p_abs.c</a></td>
 <td class="number">99</td>
+<td class="number">24</td>
+<td class="number">38</td>
 <td class="number">74</td>
+<td class="number">26</td>
+<td class="number">26</td>
 <td class="number">116</td>
+<td class="number">40</td>
+<td class="number">40</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_absdiff.c">src/math/p_absdiff.c</a></td>
 <td class="number">135</td>
+<td class="number">44</td>
+<td class="number">58</td>
 <td class="number">96</td>
+<td class="number">38</td>
+<td class="number">42</td>
 <td class="number">244</td>
+<td class="number">56</td>
+<td class="number">54</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_acos.c">src/math/p_acos.c</a></td>
 <td class="number">114</td>
+<td class="number">52</td>
+<td class="number">78</td>
 <td class="number">74</td>
+<td class="number">32</td>
+<td class="number">34</td>
 <td class="number">116</td>
+<td class="number">86</td>
+<td class="number">78</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_acosh.c">src/math/p_acosh.c</a></td>
 <td class="number">114</td>
+<td class="number">52</td>
+<td class="number">78</td>
 <td class="number">74</td>
+<td class="number">32</td>
+<td class="number">34</td>
 <td class="number">116</td>
+<td class="number">86</td>
+<td class="number">78</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_add.c">src/math/p_add.c</a></td>
 <td class="number">120</td>
+<td class="number">27</td>
+<td class="number">41</td>
 <td class="number">84</td>
+<td class="number">30</td>
+<td class="number">30</td>
 <td class="number">222</td>
+<td class="number">44</td>
+<td class="number">42</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_asin.c">src/math/p_asin.c</a></td>
 <td class="number">114</td>
+<td class="number">52</td>
+<td class="number">78</td>
 <td class="number">74</td>
+<td class="number">32</td>
+<td class="number">34</td>
 <td class="number">116</td>
+<td class="number">86</td>
+<td class="number">78</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_asinh.c">src/math/p_asinh.c</a></td>
 <td class="number">114</td>
+<td class="number">52</td>
+<td class="number">78</td>
 <td class="number">74</td>
+<td class="number">32</td>
+<td class="number">34</td>
 <td class="number">116</td>
+<td class="number">86</td>
+<td class="number">78</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_atan.c">src/math/p_atan.c</a></td>
 <td class="number">116</td>
+<td class="number">52</td>
+<td class="number">78</td>
 <td class="number">82</td>
+<td class="number">32</td>
+<td class="number">34</td>
 <td class="number">136</td>
+<td class="number">114</td>
+<td class="number">110</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_atan2.c">src/math/p_atan2.c</a></td>
 <td class="number">148</td>
+<td class="number">63</td>
+<td class="number">83</td>
 <td class="number">92</td>
+<td class="number">42</td>
+<td class="number">38</td>
 <td class="number">134</td>
+<td class="number">98</td>
+<td class="number">96</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_atanh.c">src/math/p_atanh.c</a></td>
 <td class="number">114</td>
+<td class="number">52</td>
+<td class="number">78</td>
 <td class="number">74</td>
+<td class="number">32</td>
+<td class="number">34</td>
 <td class="number">116</td>
+<td class="number">86</td>
+<td class="number">78</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_cbrt.c">src/math/p_cbrt.c</a></td>
 <td class="number">114</td>
+<td class="number">52</td>
+<td class="number">78</td>
 <td class="number">74</td>
+<td class="number">32</td>
+<td class="number">34</td>
 <td class="number">116</td>
+<td class="number">86</td>
+<td class="number">78</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_cos.c">src/math/p_cos.c</a></td>
 <td class="number">661</td>
+<td class="number">300</td>
+<td class="number">309</td>
 <td class="number">572</td>
+<td class="number">272</td>
+<td class="number">280</td>
 <td class="number">1124</td>
+<td class="number">482</td>
+<td class="number">482</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_cosh.c">src/math/p_cosh.c</a></td>
 <td class="number">114</td>
+<td class="number">52</td>
+<td class="number">78</td>
 <td class="number">74</td>
+<td class="number">32</td>
+<td class="number">34</td>
 <td class="number">116</td>
+<td class="number">86</td>
+<td class="number">78</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_div.c">src/math/p_div.c</a></td>
 <td class="number">120</td>
+<td class="number">27</td>
+<td class="number">41</td>
 <td class="number">84</td>
+<td class="number">30</td>
+<td class="number">30</td>
 <td class="number">134</td>
+<td class="number">74</td>
+<td class="number">72</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_dot.c">src/math/p_dot.c</a></td>
 <td class="number">126</td>
+<td class="number">33</td>
+<td class="number">43</td>
 <td class="number">96</td>
+<td class="number">40</td>
+<td class="number">44</td>
 <td class="number">230</td>
+<td class="number">44</td>
+<td class="number">50</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_exp.c">src/math/p_exp.c</a></td>
 <td class="number">114</td>
+<td class="number">52</td>
+<td class="number">78</td>
 <td class="number">74</td>
+<td class="number">32</td>
+<td class="number">34</td>
 <td class="number">116</td>
+<td class="number">86</td>
+<td class="number">78</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_ftoi.c">src/math/p_ftoi.c</a></td>
 <td class="number">138</td>
+<td class="number">51</td>
+<td class="number">63</td>
 <td class="number">104</td>
+<td class="number">50</td>
+<td class="number">58</td>
 <td class="number">318</td>
+<td class="number">104</td>
+<td class="number">120</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_inv.c">src/math/p_inv.c</a></td>
 <td class="number">233</td>
+<td class="number">123</td>
+<td class="number">131</td>
 <td class="number">180</td>
+<td class="number">84</td>
+<td class="number">92</td>
 <td class="number">330</td>
+<td class="number">84</td>
+<td class="number">86</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_invcbrt.c">src/math/p_invcbrt.c</a></td>
 <td class="number">258</td>
+<td class="number">173</td>
+<td class="number">193</td>
 <td class="number">192</td>
+<td class="number">102</td>
+<td class="number">106</td>
 <td class="number">356</td>
+<td class="number">128</td>
+<td class="number">126</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_invsqrt.c">src/math/p_invsqrt.c</a></td>
 <td class="number">278</td>
+<td class="number">146</td>
+<td class="number">153</td>
 <td class="number">226</td>
+<td class="number">106</td>
+<td class="number">116</td>
 <td class="number">368</td>
+<td class="number">112</td>
+<td class="number">114</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_itof.c">src/math/p_itof.c</a></td>
 <td class="number">88</td>
+<td class="number">22</td>
+<td class="number">36</td>
 <td class="number">72</td>
+<td class="number">30</td>
+<td class="number">32</td>
 <td class="number">198</td>
+<td class="number">32</td>
+<td class="number">30</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_ln.c">src/math/p_ln.c</a></td>
 <td class="number">237</td>
+<td class="number">144</td>
+<td class="number">164</td>
 <td class="number">208</td>
+<td class="number">128</td>
+<td class="number">136</td>
 <td class="number">416</td>
+<td class="number">248</td>
+<td class="number">252</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_log10.c">src/math/p_log10.c</a></td>
 <td class="number">125</td>
+<td class="number">50</td>
+<td class="number">77</td>
 <td class="number">84</td>
+<td class="number">44</td>
+<td class="number">48</td>
 <td class="number">254</td>
+<td class="number">72</td>
+<td class="number">76</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_mac.c">src/math/p_mac.c</a></td>
 <td class="number">149</td>
+<td class="number">32</td>
+<td class="number">46</td>
 <td class="number">100</td>
+<td class="number">34</td>
+<td class="number">34</td>
 <td class="number">242</td>
+<td class="number">48</td>
+<td class="number">46</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_max.c">src/math/p_max.c</a></td>
 <td class="number">183</td>
+<td class="number">83</td>
+<td class="number">123</td>
 <td class="number">142</td>
+<td class="number">62</td>
+<td class="number">72</td>
 <td class="number">310</td>
+<td class="number">182</td>
+<td class="number">164</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_mean.c">src/math/p_mean.c</a></td>
 <td class="number">110</td>
+<td class="number">32</td>
+<td class="number">42</td>
 <td class="number">96</td>
+<td class="number">44</td>
+<td class="number">52</td>
 <td class="number">304</td>
+<td class="number">64</td>
+<td class="number">80</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_median.c">src/math/p_median.c</a></td>
 <td class="number">681</td>
+<td class="number">267</td>
+<td class="number">321</td>
 <td class="number">480</td>
+<td class="number">228</td>
+<td class="number">260</td>
 <td class="number">884</td>
+<td class="number">338</td>
+<td class="number">376</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_min.c">src/math/p_min.c</a></td>
 <td class="number">141</td>
+<td class="number">56</td>
+<td class="number">63</td>
 <td class="number">108</td>
+<td class="number">50</td>
+<td class="number">60</td>
 <td class="number">166</td>
+<td class="number">94</td>
+<td class="number">94</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_mode.c">src/math/p_mode.c</a></td>
 <td class="number">280</td>
+<td class="number">125</td>
+<td class="number">150</td>
 <td class="number">198</td>
+<td class="number">116</td>
+<td class="number">116</td>
 <td class="number">316</td>
+<td class="number">180</td>
+<td class="number">194</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_mul.c">src/math/p_mul.c</a></td>
 <td class="number">120</td>
+<td class="number">27</td>
+<td class="number">41</td>
 <td class="number">84</td>
+<td class="number">30</td>
+<td class="number">30</td>
 <td class="number">222</td>
+<td class="number">44</td>
+<td class="number">42</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_popcount.c">src/math/p_popcount.c</a></td>
 <td class="number">427</td>
+<td class="number">192</td>
+<td class="number">210</td>
 <td class="number">436</td>
+<td class="number">190</td>
+<td class="number">214</td>
 <td class="number">878</td>
+<td class="number">466</td>
+<td class="number">480</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_pow.c">src/math/p_pow.c</a></td>
 <td class="number">148</td>
+<td class="number">63</td>
+<td class="number">83</td>
 <td class="number">92</td>
+<td class="number">42</td>
+<td class="number">38</td>
 <td class="number">134</td>
+<td class="number">98</td>
+<td class="number">96</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_rand.c">src/math/p_rand.c</a></td>
 <td class="number">352</td>
+<td class="number">141</td>
+<td class="number">141</td>
 <td class="number">306</td>
+<td class="number">96</td>
+<td class="number">100</td>
 <td class="number">496</td>
+<td class="number">214</td>
+<td class="number">226</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_sin.c">src/math/p_sin.c</a></td>
 <td class="number">483</td>
+<td class="number">218</td>
+<td class="number">226</td>
 <td class="number">420</td>
+<td class="number">156</td>
+<td class="number">164</td>
 <td class="number">540</td>
+<td class="number">176</td>
+<td class="number">166</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_sincos.c">src/math/p_sincos.c</a></td>
 <td class="number">69</td>
+<td class="number">36</td>
+<td class="number">36</td>
 <td class="number">40</td>
+<td class="number">28</td>
+<td class="number">28</td>
 <td class="number">88</td>
+<td class="number">70</td>
+<td class="number">70</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_sinh.c">src/math/p_sinh.c</a></td>
 <td class="number">114</td>
+<td class="number">52</td>
+<td class="number">78</td>
 <td class="number">74</td>
+<td class="number">32</td>
+<td class="number">34</td>
 <td class="number">116</td>
+<td class="number">86</td>
+<td class="number">78</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_sort.c">src/math/p_sort.c</a></td>
 <td class="number">1172</td>
+<td class="number">393</td>
+<td class="number">487</td>
 <td class="number">788</td>
+<td class="number">338</td>
+<td class="number">378</td>
 <td class="number">1232</td>
+<td class="number">534</td>
+<td class="number">542</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_sqrt.c">src/math/p_sqrt.c</a></td>
 <td class="number">303</td>
+<td class="number">149</td>
+<td class="number">168</td>
 <td class="number">246</td>
+<td class="number">110</td>
+<td class="number">120</td>
 <td class="number">386</td>
+<td class="number">116</td>
+<td class="number">120</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_stddev.c">src/math/p_stddev.c</a></td>
 <td class="number">462</td>
+<td class="number">198</td>
+<td class="number">208</td>
 <td class="number">390</td>
+<td class="number">172</td>
+<td class="number">180</td>
 <td class="number">814</td>
+<td class="number">202</td>
+<td class="number">210</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_sub.c">src/math/p_sub.c</a></td>
 <td class="number">120</td>
+<td class="number">27</td>
+<td class="number">41</td>
 <td class="number">84</td>
+<td class="number">30</td>
+<td class="number">30</td>
 <td class="number">222</td>
+<td class="number">44</td>
+<td class="number">42</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_sum.c">src/math/p_sum.c</a></td>
 <td class="number">94</td>
+<td class="number">24</td>
+<td class="number">34</td>
 <td class="number">78</td>
+<td class="number">32</td>
+<td class="number">40</td>
 <td class="number">206</td>
+<td class="number">36</td>
+<td class="number">40</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_sumsq.c">src/math/p_sumsq.c</a></td>
 <td class="number">122</td>
+<td class="number">32</td>
+<td class="number">42</td>
 <td class="number">94</td>
+<td class="number">32</td>
+<td class="number">40</td>
 <td class="number">222</td>
+<td class="number">36</td>
+<td class="number">44</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_tan.c">src/math/p_tan.c</a></td>
 <td class="number">114</td>
+<td class="number">52</td>
+<td class="number">78</td>
 <td class="number">74</td>
+<td class="number">32</td>
+<td class="number">34</td>
 <td class="number">116</td>
+<td class="number">86</td>
+<td class="number">78</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_tanh.c">src/math/p_tanh.c</a></td>
 <td class="number">114</td>
+<td class="number">52</td>
+<td class="number">78</td>
 <td class="number">74</td>
+<td class="number">32</td>
+<td class="number">34</td>
 <td class="number">116</td>
+<td class="number">86</td>
+<td class="number">78</td>
 </tr>
 <tr>
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/tinymt/tinymt32.c">src/math/tinymt/tinymt32.c</a></td>
 <td class="number">1946</td>
+<td class="number">695</td>
+<td class="number">1017</td>
 <td class="number">1480</td>
+<td class="number">760</td>
+<td class="number">844</td>
 <td class="number">3384</td>
+<td class="number">1106</td>
+<td class="number">1242</td>
 </tr>
-<tr class="bottom"><td colspan="4">&nbsp;</td></tr>
+<tr class="bottom"><td colspan="10">&nbsp;</td></tr>
 </table>
 </body>
 </html>
