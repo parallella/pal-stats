@@ -78,7 +78,7 @@ tr.row {
 </head>
 <body>
 <h1>PAL code size summary</h1>
-<p>Latest commit: 1030892b3963f04e0bae1bece37fdcc43c1ce037</p>
+<p>Latest commit: 8be8b8d610be5fcd64715f1688a2ed346934ef75</p>
 
 <table>
 <tr><th rowspan="2">&nbsp;</th><th colspan="2">x86_64</th><th colspan="2">ARM</th><th colspan="2">Epiphany</th><th class="side"><div class="rotate">Platform</div></th></tr>
@@ -113,65 +113,65 @@ tr.row {
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_add.c">base/p_atomic_add.c</a></td>
-<td class="size"> 3</td>
+<td class="size"> 68</td>
 <td class="bench"></td>
-<td class="size"> 4</td>
+<td class="size"> 264</td>
 <td class="bench"></td>
-<td class="size"> 6</td>
+<td class="size"> 152</td>
 <td class="bench"></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_and.c">base/p_atomic_and.c</a></td>
-<td class="size"> 3</td>
+<td class="size"> 186</td>
 <td class="bench"></td>
-<td class="size"> 4</td>
+<td class="size"> 280</td>
 <td class="bench"></td>
-<td class="size"> 6</td>
+<td class="size"> 152</td>
 <td class="bench"></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_compswap.c">base/p_atomic_compswap.c</a></td>
-<td class="size"> 3</td>
+<td class="size"> 122</td>
 <td class="bench"></td>
-<td class="size"> 4</td>
+<td class="size"> 328</td>
 <td class="bench"></td>
-<td class="size"> 6</td>
+<td class="size"> 308</td>
 <td class="bench"></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_or.c">base/p_atomic_or.c</a></td>
-<td class="size"> 3</td>
+<td class="size"> 186</td>
 <td class="bench"></td>
-<td class="size"> 4</td>
+<td class="size"> 280</td>
 <td class="bench"></td>
-<td class="size"> 6</td>
+<td class="size"> 152</td>
 <td class="bench"></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_sub.c">base/p_atomic_sub.c</a></td>
-<td class="size"> 3</td>
+<td class="size"> 80</td>
 <td class="bench"></td>
-<td class="size"> 4</td>
+<td class="size"> 264</td>
 <td class="bench"></td>
-<td class="size"> 6</td>
+<td class="size"> 152</td>
 <td class="bench"></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_swap.c">base/p_atomic_swap.c</a></td>
-<td class="size"> 3</td>
+<td class="size"> 52</td>
 <td class="bench"></td>
-<td class="size"> 4</td>
+<td class="size"> 172</td>
 <td class="bench"></td>
-<td class="size"> 6</td>
+<td class="size"> 152</td>
 <td class="bench"></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_atomic_xor.c">base/p_atomic_xor.c</a></td>
-<td class="size"> 3</td>
+<td class="size"> 186</td>
 <td class="bench"></td>
-<td class="size"> 4</td>
+<td class="size"> 280</td>
 <td class="bench"></td>
-<td class="size"> 6</td>
+<td class="size"> 152</td>
 <td class="bench"></td>
 </tr>
 <tr class="row">
@@ -194,11 +194,11 @@ tr.row {
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_fence.c">base/p_fence.c</a></td>
-<td class="size"> 31</td>
+<td class="size"> 4</td>
 <td class="bench"></td>
-<td class="size"> 22</td>
+<td class="size"> 6</td>
 <td class="bench"></td>
-<td class="size"> 46</td>
+<td class="size"> 4</td>
 <td class="bench"></td>
 </tr>
 <tr class="row">
@@ -230,7 +230,7 @@ tr.row {
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_get_err.c">base/p_get_err.c</a></td>
-<td class="size"> 13</td>
+<td class="size"> 16</td>
 <td class="bench"></td>
 <td class="size"> 10</td>
 <td class="bench"></td>
@@ -292,53 +292,44 @@ tr.row {
 <td class="bench"></td>
 </tr>
 <tr class="row">
-<td><a href="https://github.com/parallella/pal/tree/master/src/base/p_mutex_destroy.c">base/p_mutex_destroy.c</a></td>
-<td class="size"> 3</td>
-<td class="bench"></td>
-<td class="size"> 4</td>
-<td class="bench"></td>
-<td class="size"> 6</td>
-<td class="bench"></td>
-</tr>
-<tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_mutex_init.c">base/p_mutex_init.c</a></td>
-<td class="size"> 3</td>
+<td class="size"> 9</td>
 <td class="bench"></td>
-<td class="size"> 4</td>
+<td class="size"> 10</td>
 <td class="bench"></td>
-<td class="size"> 6</td>
+<td class="size"> 10</td>
 <td class="bench"></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_mutex_lock.c">base/p_mutex_lock.c</a></td>
-<td class="size"> 3</td>
+<td class="size"> 29</td>
 <td class="bench"></td>
-<td class="size"> 4</td>
+<td class="size"> 36</td>
 <td class="bench"></td>
-<td class="size"> 6</td>
+<td class="size"> 56</td>
 <td class="bench"></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_mutex_trylock.c">base/p_mutex_trylock.c</a></td>
-<td class="size"> 3</td>
+<td class="size"> 18</td>
 <td class="bench"></td>
-<td class="size"> 4</td>
+<td class="size"> 34</td>
 <td class="bench"></td>
-<td class="size"> 6</td>
+<td class="size"> 46</td>
 <td class="bench"></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_mutex_unlock.c">base/p_mutex_unlock.c</a></td>
-<td class="size"> 3</td>
+<td class="size"> 9</td>
 <td class="bench"></td>
-<td class="size"> 4</td>
+<td class="size"> 14</td>
 <td class="bench"></td>
-<td class="size"> 6</td>
+<td class="size"> 10</td>
 <td class="bench"></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/base/p_open.c">base/p_open.c</a></td>
-<td class="size"> 171</td>
+<td class="size"> 168</td>
 <td class="bench"></td>
 <td class="size"> 90</td>
 <td class="bench"></td>
@@ -410,7 +401,7 @@ tr.row {
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_acorr.c">dsp/p_acorr.c</a></td>
-<td class="size"> 78</td>
+<td class="size"> 94</td>
 <td class="bench"></td>
 <td class="size"> 72</td>
 <td class="bench"></td>
@@ -419,7 +410,7 @@ tr.row {
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_conv.c">dsp/p_conv.c</a></td>
-<td class="size"> 109</td>
+<td class="size"> 137</td>
 <td class="bench"></td>
 <td class="size"> 98</td>
 <td class="bench"></td>
@@ -428,7 +419,7 @@ tr.row {
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_fir.c">dsp/p_fir.c</a></td>
-<td class="size"> 901</td>
+<td class="size"> 909</td>
 <td class="bench"></td>
 <td class="size"> 584</td>
 <td class="bench"></td>
@@ -437,7 +428,7 @@ tr.row {
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_firdec.c">dsp/p_firdec.c</a></td>
-<td class="size"> 253</td>
+<td class="size"> 261</td>
 <td class="bench"></td>
 <td class="size"> 196</td>
 <td class="bench"></td>
@@ -455,7 +446,7 @@ tr.row {
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_firsym.c">dsp/p_firsym.c</a></td>
-<td class="size"> 1212</td>
+<td class="size"> 1221</td>
 <td class="bench"></td>
 <td class="size"> 812</td>
 <td class="bench"></td>
@@ -464,7 +455,7 @@ tr.row {
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/dsp/p_iir.c">dsp/p_iir.c</a></td>
-<td class="size"> 1520</td>
+<td class="size"> 1543</td>
 <td class="bench"></td>
 <td class="size"> 772</td>
 <td class="bench"></td>
@@ -491,16 +482,16 @@ tr.row {
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/image/p_box3x3.c">image/p_box3x3.c</a></td>
-<td class="size"> 163</td>
-<td class="bench"><nobr>2.92 ns</nobr></td>
+<td class="size"> 182</td>
+<td class="bench"><nobr>1.98 ns</nobr></td>
 <td class="size"> 180</td>
 <td class="bench"><nobr>65.25 ns</nobr></td>
 <td class="size"> 174</td>
-<td class="bench"><nobr>359.78 ns</nobr></td>
+<td class="bench"><nobr>22.62 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/image/p_conv2d.c">image/p_conv2d.c</a></td>
-<td class="size"> 334</td>
+<td class="size"> 303</td>
 <td class="bench"></td>
 <td class="size"> 224</td>
 <td class="bench"></td>
@@ -509,12 +500,12 @@ tr.row {
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/image/p_gauss3x3.c">image/p_gauss3x3.c</a></td>
-<td class="size"> 254</td>
-<td class="bench"><nobr>4.77 ns</nobr></td>
-<td class="size"> 220</td>
-<td class="bench"><nobr>78.75 ns</nobr></td>
-<td class="size"> 268</td>
-<td class="bench"><nobr>573.59 ns</nobr></td>
+<td class="size"> 1425</td>
+<td class="bench"><nobr>246.63 ns</nobr></td>
+<td class="size"> 864</td>
+<td class="bench"><nobr>546.75 ns</nobr></td>
+<td class="size"> 588</td>
+<td class="bench"><nobr>11.75 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/image/p_grayscale.c">image/p_grayscale.c</a></td>
@@ -527,7 +518,7 @@ tr.row {
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/image/p_harris3x3.c">image/p_harris3x3.c</a></td>
-<td class="size"> 807</td>
+<td class="size"> 797</td>
 <td class="bench"></td>
 <td class="size"> 704</td>
 <td class="bench"></td>
@@ -536,34 +527,34 @@ tr.row {
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/image/p_laplace3x3.c">image/p_laplace3x3.c</a></td>
-<td class="size"> 165</td>
-<td class="bench"><nobr>1.66 ns</nobr></td>
+<td class="size"> 187</td>
+<td class="bench"><nobr>1.16 ns</nobr></td>
 <td class="size"> 174</td>
-<td class="bench"><nobr>39.38 ns</nobr></td>
+<td class="bench"><nobr>39.37 ns</nobr></td>
 <td class="size"> 260</td>
-<td class="bench"><nobr>317.69 ns</nobr></td>
+<td class="bench"><nobr>19.85 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/image/p_median3x3.c">image/p_median3x3.c</a></td>
-<td class="size"> 782</td>
-<td class="bench"><nobr>22.50 ns</nobr></td>
+<td class="size"> 805</td>
+<td class="bench"><nobr>15.86 ns</nobr></td>
 <td class="size"> 716</td>
-<td class="bench"><nobr>221.63 ns</nobr></td>
+<td class="bench"><nobr>221.62 ns</nobr></td>
 <td class="size"> 800</td>
-<td class="bench"><nobr>163809.72 ns</nobr></td>
+<td class="bench"><nobr>10241.31 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/image/p_prewitt3x3.c">image/p_prewitt3x3.c</a></td>
-<td class="size"> 248</td>
-<td class="bench"><nobr>5.11 ns</nobr></td>
-<td class="size"> 236</td>
-<td class="bench"><nobr>95.63 ns</nobr></td>
-<td class="size"> 352</td>
-<td class="bench"><nobr>461962.19 ns</nobr></td>
+<td class="size"> 2744</td>
+<td class="bench"><nobr>210.94 ns</nobr></td>
+<td class="size"> 1378</td>
+<td class="bench"><nobr>559.13 ns</nobr></td>
+<td class="size"> 1070</td>
+<td class="bench"><nobr>26.47 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/image/p_sad16x16.c">image/p_sad16x16.c</a></td>
-<td class="size"> 225</td>
+<td class="size"> 191</td>
 <td class="bench"></td>
 <td class="size"> 148</td>
 <td class="bench"></td>
@@ -572,7 +563,7 @@ tr.row {
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/image/p_sad8x8.c">image/p_sad8x8.c</a></td>
-<td class="size"> 242</td>
+<td class="size"> 204</td>
 <td class="bench"></td>
 <td class="size"> 168</td>
 <td class="bench"></td>
@@ -581,21 +572,21 @@ tr.row {
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/image/p_scharr3x3.c">image/p_scharr3x3.c</a></td>
-<td class="size"> 570</td>
-<td class="bench"><nobr>312.80 ns</nobr></td>
-<td class="size"> 368</td>
-<td class="bench"><nobr>600.76 ns</nobr></td>
-<td class="size"> 298</td>
-<td class="bench"><nobr>804.88 ns</nobr></td>
+<td class="size"> 3256</td>
+<td class="bench"><nobr>286.83 ns</nobr></td>
+<td class="size"> 1538</td>
+<td class="bench"><nobr>817.88 ns</nobr></td>
+<td class="size"> 1094</td>
+<td class="bench"><nobr>25.76 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/image/p_sobel3x3.c">image/p_sobel3x3.c</a></td>
-<td class="size"> 2246</td>
-<td class="bench"><nobr>655.69 ns</nobr></td>
-<td class="size"> 1190</td>
-<td class="bench"><nobr>1305.01 ns</nobr></td>
-<td class="size"> 848</td>
-<td class="bench"><nobr>546.09 ns</nobr></td>
+<td class="size"> 3256</td>
+<td class="bench"><nobr>288.53 ns</nobr></td>
+<td class="size"> 1530</td>
+<td class="bench"><nobr>833.63 ns</nobr></td>
+<td class="size"> 1094</td>
+<td class="bench"><nobr>25.76 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_a_inv.c">math/p_a_inv.c</a></td>
@@ -609,351 +600,351 @@ tr.row {
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_abs.c">math/p_abs.c</a></td>
 <td class="size"> 38</td>
-<td class="bench"><nobr>2.06 ns</nobr></td>
+<td class="bench"><nobr>0.58 ns</nobr></td>
 <td class="size"> 26</td>
 <td class="bench"><nobr>7.88 ns</nobr></td>
 <td class="size"> 40</td>
-<td class="bench"><nobr>271.25 ns</nobr></td>
+<td class="bench"><nobr>16.95 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_absdiff.c">math/p_absdiff.c</a></td>
-<td class="size"> 58</td>
-<td class="bench"><nobr>1.06 ns</nobr></td>
+<td class="size"> 52</td>
+<td class="bench"><nobr>0.86 ns</nobr></td>
 <td class="size"> 42</td>
-<td class="bench"><nobr>22.50 ns</nobr></td>
+<td class="bench"><nobr>16.88 ns</nobr></td>
 <td class="size"> 54</td>
-<td class="bench"><nobr>457.97 ns</nobr></td>
+<td class="bench"><nobr>28.62 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_acos.c">math/p_acos.c</a></td>
-<td class="size"> 78</td>
-<td class="bench"><nobr>10.60 ns</nobr></td>
-<td class="size"> 34</td>
-<td class="bench"><nobr>37.13 ns</nobr></td>
-<td class="size"> 78</td>
-<td class="bench"><nobr>2213239.00 ns</nobr></td>
+<td class="size"> 546</td>
+<td class="bench"><nobr>8.34 ns</nobr></td>
+<td class="size"> 364</td>
+<td class="bench"><nobr>127.12 ns</nobr></td>
+<td class="size"> 384</td>
+<td class="bench"><nobr>175.40 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_acosh.c">math/p_acosh.c</a></td>
-<td class="size"> 78</td>
-<td class="bench"><nobr>17.79 ns</nobr></td>
+<td class="size"> 71</td>
+<td class="bench"><nobr>5.05 ns</nobr></td>
 <td class="size"> 34</td>
-<td class="bench"><nobr>100.13 ns</nobr></td>
+<td class="bench"><nobr>100.12 ns</nobr></td>
 <td class="size"> 78</td>
-<td class="bench"><nobr>15383.38 ns</nobr></td>
+<td class="bench"><nobr>958.86 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_add.c">math/p_add.c</a></td>
 <td class="size"> 41</td>
-<td class="bench"><nobr>0.61 ns</nobr></td>
+<td class="bench"><nobr>0.58 ns</nobr></td>
 <td class="size"> 30</td>
-<td class="bench"><nobr>15.75 ns</nobr></td>
+<td class="bench"><nobr>14.63 ns</nobr></td>
 <td class="size"> 42</td>
-<td class="bench"><nobr>404.53 ns</nobr></td>
+<td class="bench"><nobr>25.28 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_asin.c">math/p_asin.c</a></td>
-<td class="size"> 506</td>
-<td class="bench"><nobr>27.99 ns</nobr></td>
+<td class="size"> 546</td>
+<td class="bench"><nobr>7.88 ns</nobr></td>
 <td class="size"> 356</td>
-<td class="bench"><nobr>120.38 ns</nobr></td>
+<td class="bench"><nobr>120.37 ns</nobr></td>
 <td class="size"> 376</td>
-<td class="bench"><nobr>2646.41 ns</nobr></td>
+<td class="bench"><nobr>165.40 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_asinh.c">math/p_asinh.c</a></td>
-<td class="size"> 78</td>
-<td class="bench"><nobr>35.24 ns</nobr></td>
+<td class="size"> 71</td>
+<td class="bench"><nobr>9.79 ns</nobr></td>
 <td class="size"> 34</td>
-<td class="bench"><nobr>167.63 ns</nobr></td>
+<td class="bench"><nobr>166.50 ns</nobr></td>
 <td class="size"> 78</td>
-<td class="bench"><nobr>795.41 ns</nobr></td>
+<td class="bench"><nobr>48.88 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_atan.c">math/p_atan.c</a></td>
 <td class="size"> 114</td>
-<td class="bench"><nobr>9.08 ns</nobr></td>
+<td class="bench"><nobr>2.59 ns</nobr></td>
 <td class="size"> 112</td>
-<td class="bench"><nobr>75.38 ns</nobr></td>
-<td class="size"> 118</td>
-<td class="bench"><nobr>1178.31 ns</nobr></td>
+<td class="bench"><nobr>74.25 ns</nobr></td>
+<td class="size"> 120</td>
+<td class="bench"><nobr>76.97 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_atan2.c">math/p_atan2.c</a></td>
-<td class="size"> 83</td>
-<td class="bench"><nobr>51.77 ns</nobr></td>
+<td class="size"> 75</td>
+<td class="bench"><nobr>16.43 ns</nobr></td>
 <td class="size"> 38</td>
-<td class="bench"><nobr>246.38 ns</nobr></td>
+<td class="bench"><nobr>244.13 ns</nobr></td>
 <td class="size"> 96</td>
-<td class="bench"><nobr>4310630.50 ns</nobr></td>
+<td class="bench"><nobr>269382.25 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_atanh.c">math/p_atanh.c</a></td>
-<td class="size"> 78</td>
-<td class="bench"><nobr>10.95 ns</nobr></td>
+<td class="size"> 71</td>
+<td class="bench"><nobr>4.74 ns</nobr></td>
 <td class="size"> 34</td>
-<td class="bench"><nobr>45.00 ns</nobr></td>
+<td class="bench"><nobr>44.86 ns</nobr></td>
 <td class="size"> 78</td>
-<td class="bench"><nobr>2319596.50 ns</nobr></td>
+<td class="bench"><nobr>144814.11 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_cbrt.c">math/p_cbrt.c</a></td>
-<td class="size"> 78</td>
-<td class="bench"><nobr>81.04 ns</nobr></td>
+<td class="size"> 71</td>
+<td class="bench"><nobr>24.03 ns</nobr></td>
 <td class="size"> 34</td>
 <td class="bench"><nobr>237.38 ns</nobr></td>
 <td class="size"> 78</td>
-<td class="bench"><nobr>7203007.50 ns</nobr></td>
+<td class="bench"><nobr>449647.75 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_cos.c">math/p_cos.c</a></td>
-<td class="size"> 309</td>
-<td class="bench"><nobr>53.56 ns</nobr></td>
+<td class="size"> 322</td>
+<td class="bench"><nobr>10.58 ns</nobr></td>
 <td class="size"> 280</td>
-<td class="bench"><nobr>177.75 ns</nobr></td>
+<td class="bench"><nobr>175.50 ns</nobr></td>
 <td class="size"> 482</td>
-<td class="bench"><nobr>7071742.50 ns</nobr></td>
+<td class="bench"><nobr>441953.94 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_cosh.c">math/p_cosh.c</a></td>
-<td class="size"> 78</td>
-<td class="bench"><nobr>14.98 ns</nobr></td>
-<td class="size"> 34</td>
-<td class="bench"><nobr>86.63 ns</nobr></td>
-<td class="size"> 78</td>
-<td class="bench"><nobr>2525126.50 ns</nobr></td>
+<td class="size"> 386</td>
+<td class="bench"><nobr>8.05 ns</nobr></td>
+<td class="size"> 272</td>
+<td class="bench"><nobr>165.38 ns</nobr></td>
+<td class="size"> 400</td>
+<td class="bench"><nobr>380.51 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_div.c">math/p_div.c</a></td>
 <td class="size"> 41</td>
-<td class="bench"><nobr>10.66 ns</nobr></td>
+<td class="bench"><nobr>3.95 ns</nobr></td>
 <td class="size"> 30</td>
-<td class="bench"><nobr>28.13 ns</nobr></td>
+<td class="bench"><nobr>27.00 ns</nobr></td>
 <td class="size"> 72</td>
-<td class="bench"><nobr>1578.12 ns</nobr></td>
+<td class="bench"><nobr>98.63 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_dot.c">math/p_dot.c</a></td>
 <td class="size"> 43</td>
-<td class="bench"><nobr>0.96 ns</nobr></td>
+<td class="bench"><nobr>0.86 ns</nobr></td>
 <td class="size"> 44</td>
-<td class="bench"><nobr>12.38 ns</nobr></td>
+<td class="bench"><nobr>11.25 ns</nobr></td>
 <td class="size"> 50</td>
-<td class="bench"><nobr>271.34 ns</nobr></td>
+<td class="bench"><nobr>16.96 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_exp.c">math/p_exp.c</a></td>
-<td class="size"> 303</td>
-<td class="bench"><nobr>16.74 ns</nobr></td>
+<td class="size"> 363</td>
+<td class="bench"><nobr>5.81 ns</nobr></td>
 <td class="size"> 264</td>
-<td class="bench"><nobr>129.38 ns</nobr></td>
+<td class="bench"><nobr>128.25 ns</nobr></td>
 <td class="size"> 382</td>
-<td class="bench"><nobr>4753.06 ns</nobr></td>
+<td class="bench"><nobr>297.06 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_ftoi.c">math/p_ftoi.c</a></td>
-<td class="size"> 63</td>
-<td class="bench"><nobr>3.30 ns</nobr></td>
+<td class="size"> 61</td>
+<td class="bench"><nobr>1.22 ns</nobr></td>
 <td class="size"> 58</td>
 <td class="bench"><nobr>22.50 ns</nobr></td>
 <td class="size"> 120</td>
-<td class="bench"><nobr>1631.66 ns</nobr></td>
+<td class="bench"><nobr>101.97 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_inv.c">math/p_inv.c</a></td>
-<td class="size"> 131</td>
-<td class="bench"><nobr>11.40 ns</nobr></td>
+<td class="size"> 116</td>
+<td class="bench"><nobr>3.07 ns</nobr></td>
 <td class="size"> 92</td>
 <td class="bench"><nobr>72.00 ns</nobr></td>
 <td class="size"> 86</td>
-<td class="bench"><nobr>1071.34 ns</nobr></td>
+<td class="bench"><nobr>66.96 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_invcbrt.c">math/p_invcbrt.c</a></td>
-<td class="size"> 193</td>
-<td class="bench"><nobr>83.04 ns</nobr></td>
+<td class="size"> 179</td>
+<td class="bench"><nobr>32.70 ns</nobr></td>
 <td class="size"> 106</td>
 <td class="bench"><nobr>300.38 ns</nobr></td>
 <td class="size"> 126</td>
-<td class="bench"><nobr>7193690.00 ns</nobr></td>
+<td class="bench"><nobr>449605.78 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_invsqrt.c">math/p_invsqrt.c</a></td>
-<td class="size"> 153</td>
-<td class="bench"><nobr>13.88 ns</nobr></td>
+<td class="size"> 144</td>
+<td class="bench"><nobr>4.39 ns</nobr></td>
 <td class="size"> 116</td>
 <td class="bench"><nobr>94.50 ns</nobr></td>
 <td class="size"> 114</td>
-<td class="bench"><nobr>1524.72 ns</nobr></td>
+<td class="bench"><nobr>95.29 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_itof.c">math/p_itof.c</a></td>
-<td class="size"> 36</td>
-<td class="bench"><nobr>3.26 ns</nobr></td>
+<td class="size"> 40</td>
+<td class="bench"><nobr>0.58 ns</nobr></td>
 <td class="size"> 32</td>
-<td class="bench"><nobr>15.75 ns</nobr></td>
+<td class="bench"><nobr>14.62 ns</nobr></td>
 <td class="size"> 30</td>
-<td class="bench"><nobr>377.81 ns</nobr></td>
+<td class="bench"><nobr>23.61 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_ln.c">math/p_ln.c</a></td>
-<td class="size"> 164</td>
-<td class="bench"><nobr>14.77 ns</nobr></td>
+<td class="size"> 163</td>
+<td class="bench"><nobr>3.76 ns</nobr></td>
 <td class="size"> 136</td>
-<td class="bench"><nobr>66.38 ns</nobr></td>
+<td class="bench"><nobr>66.37 ns</nobr></td>
 <td class="size"> 252</td>
-<td class="bench"><nobr>4395531.50 ns</nobr></td>
+<td class="bench"><nobr>274953.84 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_log10.c">math/p_log10.c</a></td>
 <td class="size"> 77</td>
-<td class="bench"><nobr>16.72 ns</nobr></td>
+<td class="bench"><nobr>4.33 ns</nobr></td>
 <td class="size"> 48</td>
-<td class="bench"><nobr>83.25 ns</nobr></td>
+<td class="bench"><nobr>81.00 ns</nobr></td>
 <td class="size"> 76</td>
-<td class="bench"><nobr>4395072.50 ns</nobr></td>
+<td class="bench"><nobr>274708.22 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_mac.c">math/p_mac.c</a></td>
 <td class="size"> 46</td>
-<td class="bench"><nobr>2.37 ns</nobr></td>
+<td class="bench"><nobr>0.86 ns</nobr></td>
 <td class="size"> 34</td>
-<td class="bench"><nobr>24.75 ns</nobr></td>
+<td class="bench"><nobr>22.50 ns</nobr></td>
 <td class="size"> 46</td>
-<td class="bench"><nobr>431.19 ns</nobr></td>
+<td class="bench"><nobr>26.95 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_max.c">math/p_max.c</a></td>
-<td class="size"> 123</td>
-<td class="bench"><nobr>13.00 ns</nobr></td>
+<td class="size"> 120</td>
+<td class="bench"><nobr>4.92 ns</nobr></td>
 <td class="size"> 72</td>
-<td class="bench"><nobr>28.13 ns</nobr></td>
+<td class="bench"><nobr>27.00 ns</nobr></td>
 <td class="size"> 164</td>
-<td class="bench"><nobr>1202.97 ns</nobr></td>
+<td class="bench"><nobr>75.32 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_mean.c">math/p_mean.c</a></td>
-<td class="size"> 42</td>
-<td class="bench"><nobr>2.35 ns</nobr></td>
+<td class="size"> 62</td>
+<td class="bench"><nobr>0.86 ns</nobr></td>
 <td class="size"> 52</td>
-<td class="bench"><nobr>10.13 ns</nobr></td>
+<td class="bench"><nobr>9.00 ns</nobr></td>
 <td class="size"> 80</td>
-<td class="bench"><nobr>220.72 ns</nobr></td>
+<td class="bench"><nobr>13.79 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_median.c">math/p_median.c</a></td>
-<td class="size"> 321</td>
-<td class="bench"><nobr>68.34 ns</nobr></td>
+<td class="size"> 315</td>
+<td class="bench"><nobr>28.65 ns</nobr></td>
 <td class="size"> 260</td>
-<td class="bench"><nobr>426.38 ns</nobr></td>
+<td class="bench"><nobr>421.88 ns</nobr></td>
 <td class="size"> 376</td>
-<td class="bench"><nobr>37390.62 ns</nobr></td>
+<td class="bench"><nobr>2326.86 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_min.c">math/p_min.c</a></td>
 <td class="size"> 63</td>
-<td class="bench"><nobr>1.63 ns</nobr></td>
+<td class="bench"><nobr>0.60 ns</nobr></td>
 <td class="size"> 60</td>
 <td class="bench"><nobr>13.50 ns</nobr></td>
 <td class="size"> 94</td>
-<td class="bench"><nobr>1575.31 ns</nobr></td>
+<td class="bench"><nobr>98.45 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_mode.c">math/p_mode.c</a></td>
-<td class="size"> 150</td>
-<td class="bench"><nobr>220.99 ns</nobr></td>
+<td class="size"> 176</td>
+<td class="bench"><nobr>61.88 ns</nobr></td>
 <td class="size"> 116</td>
-<td class="bench"><nobr>624.38 ns</nobr></td>
+<td class="bench"><nobr>616.50 ns</nobr></td>
 <td class="size"> 194</td>
-<td class="bench"><nobr>449189.56 ns</nobr></td>
+<td class="bench"></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_mul.c">math/p_mul.c</a></td>
 <td class="size"> 41</td>
-<td class="bench"><nobr>1.38 ns</nobr></td>
+<td class="bench"><nobr>0.58 ns</nobr></td>
 <td class="size"> 30</td>
-<td class="bench"><nobr>18.00 ns</nobr></td>
+<td class="bench"><nobr>15.75 ns</nobr></td>
 <td class="size"> 42</td>
-<td class="bench"><nobr>404.53 ns</nobr></td>
+<td class="bench"><nobr>25.28 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_popcount.c">math/p_popcount.c</a></td>
-<td class="size"> 210</td>
-<td class="bench"><nobr>5.01 ns</nobr>
-<nobr>5.07 ns</nobr></td>
+<td class="size"> 202</td>
+<td class="bench"><nobr>2.13 ns</nobr>
+<nobr>2.15 ns</nobr></td>
 <td class="size"> 214</td>
-<td class="bench"><nobr>23.63 ns</nobr>
-<nobr>56.25 ns</nobr></td>
+<td class="bench"><nobr>23.62 ns</nobr>
+<nobr>55.12 ns</nobr></td>
 <td class="size"> 480</td>
-<td class="bench"><nobr>671.41 ns</nobr>
-<nobr>286846.91 ns</nobr></td>
+<td class="bench"><nobr>41.96 ns</nobr>
+<nobr>17858.19 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_pow.c">math/p_pow.c</a></td>
-<td class="size"> 8400</td>
-<td class="bench"><nobr>19.76 ns</nobr></td>
+<td class="size"> 8395</td>
+<td class="bench"><nobr>6.51 ns</nobr></td>
 <td class="size"> 8416</td>
-<td class="bench"><nobr>142.88 ns</nobr></td>
+<td class="bench"><nobr>141.75 ns</nobr></td>
 <td class="size"> 8578</td>
-<td class="bench"><nobr>10737453.00 ns</nobr></td>
+<td class="bench"></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_rand.c">math/p_rand.c</a></td>
 <td class="size"> 141</td>
-<td class="bench"><nobr>11.71 ns</nobr></td>
+<td class="bench"><nobr>4.98 ns</nobr></td>
 <td class="size"> 100</td>
-<td class="bench"><nobr>60.75 ns</nobr></td>
+<td class="bench"><nobr>58.50 ns</nobr></td>
 <td class="size"> 226</td>
-<td class="bench"><nobr>1871.28 ns</nobr></td>
+<td class="bench"><nobr>116.95 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_sin.c">math/p_sin.c</a></td>
-<td class="size"> 226</td>
-<td class="bench"><nobr>11.57 ns</nobr></td>
+<td class="size"> 222</td>
+<td class="bench"><nobr>5.15 ns</nobr></td>
 <td class="size"> 164</td>
-<td class="bench"><nobr>103.50 ns</nobr></td>
+<td class="bench"><nobr>100.13 ns</nobr></td>
 <td class="size"> 166</td>
-<td class="bench"><nobr>1338.53 ns</nobr></td>
+<td class="bench"><nobr>83.65 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_sincos.c">math/p_sincos.c</a></td>
 <td class="size"> 36</td>
-<td class="bench"><nobr>61.17 ns</nobr></td>
+<td class="bench"><nobr>15.73 ns</nobr></td>
 <td class="size"> 28</td>
-<td class="bench"><nobr>277.88 ns</nobr></td>
+<td class="bench"><nobr>275.63 ns</nobr></td>
 <td class="size"> 70</td>
-<td class="bench"><nobr>7073198.00 ns</nobr></td>
+<td class="bench"><nobr>442100.62 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_sinh.c">math/p_sinh.c</a></td>
-<td class="size"> 78</td>
-<td class="bench"><nobr>17.03 ns</nobr></td>
-<td class="size"> 34</td>
-<td class="bench"><nobr>77.63 ns</nobr></td>
-<td class="size"> 78</td>
-<td class="bench"><nobr>1986855.00 ns</nobr></td>
+<td class="size"> 386</td>
+<td class="bench"><nobr>8.05 ns</nobr></td>
+<td class="size"> 272</td>
+<td class="bench"><nobr>165.38 ns</nobr></td>
+<td class="size"> 400</td>
+<td class="bench"><nobr>380.51 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_sort.c">math/p_sort.c</a></td>
-<td class="size"> 487</td>
-<td class="bench"><nobr>204.02 ns</nobr></td>
+<td class="size"> 600</td>
+<td class="bench"><nobr>60.94 ns</nobr></td>
 <td class="size"> 378</td>
-<td class="bench"><nobr>610.88 ns</nobr></td>
+<td class="bench"><nobr>604.13 ns</nobr></td>
 <td class="size"> 542</td>
-<td class="bench"><nobr>16352.53 ns</nobr></td>
+<td class="bench"><nobr>1022.03 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_sqrt.c">math/p_sqrt.c</a></td>
-<td class="size"> 168</td>
-<td class="bench"><nobr>12.57 ns</nobr></td>
+<td class="size"> 152</td>
+<td class="bench"><nobr>5.00 ns</nobr></td>
 <td class="size"> 120</td>
-<td class="bench"><nobr>100.13 ns</nobr></td>
+<td class="bench"><nobr>99.00 ns</nobr></td>
 <td class="size"> 120</td>
-<td class="bench"><nobr>1524.72 ns</nobr></td>
+<td class="bench"><nobr>95.29 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_stddev.c">math/p_stddev.c</a></td>
-<td class="size"> 208</td>
+<td class="size"> 230</td>
 <td class="bench"></td>
 <td class="size"> 180</td>
 <td class="bench"></td>
@@ -963,51 +954,51 @@ tr.row {
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_sub.c">math/p_sub.c</a></td>
 <td class="size"> 41</td>
-<td class="bench"><nobr>1.29 ns</nobr></td>
+<td class="bench"><nobr>0.58 ns</nobr></td>
 <td class="size"> 30</td>
-<td class="bench"><nobr>15.75 ns</nobr></td>
+<td class="bench"><nobr>14.63 ns</nobr></td>
 <td class="size"> 42</td>
-<td class="bench"><nobr>404.53 ns</nobr></td>
+<td class="bench"><nobr>25.28 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_sum.c">math/p_sum.c</a></td>
-<td class="size"> 34</td>
-<td class="bench"><nobr>2.33 ns</nobr></td>
+<td class="size"> 50</td>
+<td class="bench"><nobr>1.16 ns</nobr></td>
 <td class="size"> 40</td>
-<td class="bench"><nobr>10.13 ns</nobr></td>
+<td class="bench"><nobr>9.00 ns</nobr></td>
 <td class="size"> 40</td>
-<td class="bench"><nobr>218.00 ns</nobr></td>
+<td class="bench"><nobr>13.62 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_sumsq.c">math/p_sumsq.c</a></td>
-<td class="size"> 42</td>
-<td class="bench"><nobr>1.79 ns</nobr></td>
+<td class="size"> 58</td>
+<td class="bench"><nobr>0.86 ns</nobr></td>
 <td class="size"> 40</td>
-<td class="bench"><nobr>10.13 ns</nobr></td>
+<td class="bench"><nobr>9.00 ns</nobr></td>
 <td class="size"> 44</td>
-<td class="bench"><nobr>218.00 ns</nobr></td>
+<td class="bench"><nobr>13.62 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_tan.c">math/p_tan.c</a></td>
-<td class="size"> 913</td>
-<td class="bench"><nobr>11.18 ns</nobr></td>
+<td class="size"> 843</td>
+<td class="bench"><nobr>5.44 ns</nobr></td>
 <td class="size"> 492</td>
-<td class="bench"><nobr>136.13 ns</nobr></td>
-<td class="size"> 804</td>
-<td class="bench"><nobr>4191.59 ns</nobr></td>
+<td class="bench"><nobr>132.75 ns</nobr></td>
+<td class="size"> 726</td>
+<td class="bench"><nobr>273.95 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/p_tanh.c">math/p_tanh.c</a></td>
-<td class="size"> 78</td>
-<td class="bench"><nobr>19.08 ns</nobr></td>
-<td class="size"> 34</td>
-<td class="bench"><nobr>84.38 ns</nobr></td>
-<td class="size"> 78</td>
-<td class="bench"><nobr>1300667.50 ns</nobr></td>
+<td class="size"> 378</td>
+<td class="bench"><nobr>8.17 ns</nobr></td>
+<td class="size"> 272</td>
+<td class="bench"><nobr>166.50 ns</nobr></td>
+<td class="size"> 404</td>
+<td class="bench"><nobr>383.84 ns</nobr></td>
 </tr>
 <tr class="row">
 <td><a href="https://github.com/parallella/pal/tree/master/src/math/tinymt/tinymt32.c">math/tinymt/tinymt32.c</a></td>
-<td class="size"> 1017</td>
+<td class="size"> 1016</td>
 <td class="bench"></td>
 <td class="size"> 844</td>
 <td class="bench"></td>
